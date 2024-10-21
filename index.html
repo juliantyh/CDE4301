@@ -54,9 +54,15 @@
     <div class="table-of-content">
       <h2>Table of Contents</h2>
       <sl-tree>
-        <a href="#section-header-1">Acknowledgements</a>
-        <a href="#section-header-2">List of Common Acronyms</a>
-        <a href="#section-header-3">1. Introduction</a>
+        <sl-tree-item expanded>
+          <a href="#section-header-1">Acknowledgements</a>
+        </sl-tree-item>
+        <sl-tree-item expanded>
+          <a href="#section-header-2">List of Common Acronyms</a>
+        </sl-tree-item>
+        <sl-tree-item expanded>
+          <a href="#section-header-3">1. Introduction</a>
+        </sl-tree-item>
         <sl-tree-item expanded>
           <a href="#section-header-4">2. Problem Clarification</a>
           <sl-tree-item>
@@ -66,8 +72,12 @@
             <a href="#sub-section-4-header-2">2.2. Target Audience/a>
           </sl-tree-item>
         </sl-tree-item>
-        <a href="#section-header-5">3. Market Analysis and Existing Solutions</a>
-        <a href="#section-header-6">4. Value Proposition</a>
+        <sl-tree-item expanded>
+          <a href="#section-header-5">3. Market Analysis and Existing Solutions</a>
+        </sl-tree-item>
+        <sl-tree-item expanded>
+          <a href="#section-header-6">4. Value Proposition</a>
+        </sl-tree-item>
         <sl-tree-item expanded>
           <a href="#section-header-7">5. Design Methodology</a>
           <sl-tree-item>
@@ -77,15 +87,21 @@
             <a href="#sub-section-7-header-2">5.2 Design Specifications/a>
           </sl-tree-item>
         </sl-tree-item>
-        <a href="#section-header-8">6. Concept Generation and Selection</a>
+        <sl-tree-item expanded>
+          <a href="#section-header-8">6. Concept Generation and Selection</a>
+        </sl-tree-item>
         <sl-tree-item expanded>
           <a href="#section-header-9">7. Concept Design</a>
           <sl-tree-item>
             <a href="#sub-section-9-header-1">7.1. Functional Analysis</a>
           </sl-tree-item>
         </sl-tree-item>
-        <a href="#section-header-10">8. Prototyping</a>
-        <a href="#section-header-10">9. Future Work</a>
+        <sl-tree-item expanded>
+          <a href="#section-header-10">8. Prototyping</a>
+        </sl-tree-item>
+        <sl-tree-item expanded>
+          <a href="#section-header-10">9. Future Work</a>
+        </sl-tree-item>
         <sl-tree-item>
           <a href="#references">References</a>
         </sl-tree-item>
@@ -94,7 +110,6 @@
     <sl-divider></sl-divider>
 
     <div>
-
       <!-- This is an example of what a section might look like -->
       <div id="section-header-1">
         <h2> Acknowledgements </h2>
@@ -116,193 +131,215 @@
         </p>
       </div>
 
-      <div id="section-header-2"></div>
-      <h2> List of Common Acronyms </h2>
-      <!-- This is an example of how you might use the table component -->
-      <table-component subtitle="">
-        <div id="table-1"></div>
-      </table-component>
+      <div id="section-header-2">
+        <h2> List of Common Acronyms </h2>
+        <!-- This is an example of how you might use the table component -->
+        <table-component subtitle="">
+          <div id="table-1"></div>
+        </table-component>
+      </div>
+
+      <div id="section-header-3">
+        <h2> 1. Introduction </h2>
+        <p>
+          This project is done in collaboration with DukeNUS and SGH to increase the adoption of endoscopic resection by
+          Gastroenterologists for pre-cancerous gastric subepithelial lesions (Gastrointestinal Stromal Tumors and
+          Neuroendocrine Neoplasms) and early gastric cancer less than 3 cm, from 2% to 40% within 5 years, by achieving
+          efficacy (R0 resection rates) and safety (complication rates) comparable to the gold standard of surgical
+          resection and making the procedure easier, safer and faster.
+          There are two main techniques for endoscopic submucosal resection.
+          1) Endoscopic Submucosal Dissection (ESD), the current standard-of-care resection technique where the
+          endoscopist
+          cuts into the mucosa, removes the lesion and closes the wound left behind
+          2) Endoscopic Full Thickness Resection (EFTR), using the OVESCO FTRD® System which is a 3-in-1 device that
+          does a
+          full-thickness or deep wall resection to grab hold of the lesion, resect it and close the wound left behind.
+          Currently, In Singhealth, only SGH and CGH provide endoscopic resection procedures for sub-epithelial tumors.
+          Additionally, only 2% of Gastroenterologists in the USA perform endoscopic resection of subepithelial lesions
+          using Full Thickness Resection Device, the FTRD® System (XX, 2024). From our interviews at the SGH Ambulatory
+          Endoscopy Centre (AEC), two endoscopists are confident to attempt the FTRD procedure with a high success rate.
+          We
+          ascertained that ESD and FTRD are complex and difficult procedure due to the following problems:
+          1) ESD is a time consuming and difficult procedure
+          2) During EFTR, it is difficult to determine if the lesion has been completely resected
+          3) During EFTR, it is difficult to ensure that the endoscopic clips close mucosal defects sufficiently to
+          prevent
+          blood leakage resulting in complications and need for hospitalization.
+          Our device SafeCut™ makes the process of endoscopic resection of gastric subepithelial lesions and early
+          gastric
+          cancer just as safe and effective as surgical wedge resection, while being faster than the current
+          standard-of-care endoscopic resection technique, Endoscopic Submucosal Dissection (ESD). It also improves on
+          challenges faced by endoscopists when using the 3-in-1 FTRD® System to securely capture submucosal lesions and
+          ensure complete resection, reducing the risk of perforation, while retaining the resection efficiency.
+        </p>
+      </div>
+
+      <div id="section-header-4">
+        <h2> 2. Problem Clarification </h2>
+
+        <div id="sub-section-4-header-1"></div>
+        <h3>2.1. Stakeholder Analysis</h3>
+        <p>
+          From our interview with stakeholders at SGH, we have identified three main stakeholders:
+          1. Endoscopists want the resection of subepithelial lesions to safer and easier by ensuring that mucosal
+          defects
+          are closed, and the lesion is completely removed.
+          2. Patients find the bi-yearly screenings inconvenient and face stress and anxiety from living with tumours.
+          They
+          also want to remove them endoscopically in a single session.
+          3. Nurses take 1 year to master endoscopic procedure and >3 months to stabilize holding of the snare.
+        </p>
+      </div>
+
+      <div id="sub-section-4-header-2">
+        <h3>2.2. Target Audience</h3>
+        <p>
+          Primary Target Audience: Gastroenterologists who currently perform endoscopic resection of gastric
+          subepithelial
+          lesions and early gastric cancers.
+          Secondary Target Audience: Physicians (other gastroenterologists, surgeons) who are trained in
+          esophagogastroduodenoscopy (EGD) to diagnose gastric subepithelial lesions and early gastric cancers, but do
+          not
+          perform endoscopic resection.
+        </p>
+      </div>
     </div>
 
-    <div id="section-header-3"></div>
-    <h2> 1. Introduction </h2>
-    <p>
-      This project is done in collaboration with DukeNUS and SGH to increase the adoption of endoscopic resection by
-      Gastroenterologists for pre-cancerous gastric subepithelial lesions (Gastrointestinal Stromal Tumors and
-      Neuroendocrine Neoplasms) and early gastric cancer less than 3 cm, from 2% to 40% within 5 years, by achieving
-      efficacy (R0 resection rates) and safety (complication rates) comparable to the gold standard of surgical
-      resection and making the procedure easier, safer and faster.
-      There are two main techniques for endoscopic submucosal resection.
-      1) Endoscopic Submucosal Dissection (ESD), the current standard-of-care resection technique where the endoscopist
-      cuts into the mucosa, removes the lesion and closes the wound left behind
-      2) Endoscopic Full Thickness Resection (EFTR), using the OVESCO FTRD® System which is a 3-in-1 device that does a
-      full-thickness or deep wall resection to grab hold of the lesion, resect it and close the wound left behind.
-      Currently, In Singhealth, only SGH and CGH provide endoscopic resection procedures for sub-epithelial tumors.
-      Additionally, only 2% of Gastroenterologists in the USA perform endoscopic resection of subepithelial lesions
-      using Full Thickness Resection Device, the FTRD® System (XX, 2024). From our interviews at the SGH Ambulatory
-      Endoscopy Centre (AEC), two endoscopists are confident to attempt the FTRD procedure with a high success rate. We
-      ascertained that ESD and FTRD are complex and difficult procedure due to the following problems:
-      1) ESD is a time consuming and difficult procedure
-      2) During EFTR, it is difficult to determine if the lesion has been completely resected
-      3) During EFTR, it is difficult to ensure that the endoscopic clips close mucosal defects sufficiently to prevent
-      blood leakage resulting in complications and need for hospitalization.
-      Our device SafeCut™ makes the process of endoscopic resection of gastric subepithelial lesions and early gastric
-      cancer just as safe and effective as surgical wedge resection, while being faster than the current
-      standard-of-care endoscopic resection technique, Endoscopic Submucosal Dissection (ESD). It also improves on
-      challenges faced by endoscopists when using the 3-in-1 FTRD® System to securely capture submucosal lesions and
-      ensure complete resection, reducing the risk of perforation, while retaining the resection efficiency.
-    </p>
-  </div>
-
-  <div id="section-header-4"></div>
-  <h2> 2. Problem Clarification </h2>
-  </div>
-
-  <div id="sub-section-4-header-1">
-    <h3>2.1. Stakeholder Analysis</h3>
-    <p>
-      From our interview with stakeholders at SGH, we have identified three main stakeholders:
-      1. Endoscopists want the resection of subepithelial lesions to safer and easier by ensuring that mucosal defects
-      are closed, and the lesion is completely removed.
-      2. Patients find the bi-yearly screenings inconvenient and face stress and anxiety from living with tumours. They
-      also want to remove them endoscopically in a single session.
-      3. Nurses take 1 year to master endoscopic procedure and >3 months to stabilize holding of the snare.
-    </p>
-  </div>
-
-  <div id="sub-section-4-header-2">
-    <h3>2.2. Target Audience</h3>
-    <p>
-      Primary Target Audience: Gastroenterologists who currently perform endoscopic resection of gastric subepithelial
-      lesions and early gastric cancers.
-      Secondary Target Audience: Physicians (other gastroenterologists, surgeons) who are trained in
-      esophagogastroduodenoscopy (EGD) to diagnose gastric subepithelial lesions and early gastric cancers, but do not
-      perform endoscopic resection.
-    </p>
-
-    <!-- This is an example of how you might use the image component -->
-    <image-component tag="image" source="assets/requirement.png"
-      subtitle="Image 1: iDP suggested pathway"></image-component>
-  </div>
-  </div>
-
-  <br />
-  <br />
-  <sl-divider></sl-divider>
-
-  <div id="section-header-5"></div>
-  <h2> 3. Market Analysis and Existing Solutions </h2>
-  <p>
-    We conducted market analysis of existing solutions and products for Endoscopic Submucosal Resection. Each existing
-    solution has its strengths and weaknesses.
-  </p>
-  </div>
-
-  <div id="section-header-6"></div>
-  <h2> 4. Value Proposition </h2>
-  <p>
-    To fill the identified gap in the market, we have developed the following value proposition:
-    “SafeCut™ makes the process of endoscopic resection of gastric subepithelial lesions and early gastric cancer just
-    as safe and effective as surgical wedge resection, while being faster than the current standard-of-care endoscopic
-    resection technique, Endoscopic Submucosal Dissection (ESD). It also improves on challenges faced by endoscopists
-    when using the 3-in-1 Full Thickness Resection Device (FTRD® System) with regards to securely capturing submucosal
-    lesions and ensuring complete resection, and reducing the risk of perforation, while retaining the resection
-    efficiency.”
-  </p>
-  </div>
-
-  <div id="section-header-7"></div>
-  <h2> 5. Design Methodology </h2>
-  <p>
-    The Jobs To Be Done represents the necessary tasks that the device has to fulfill. Pains and Gains represent where
-    our device can differentiate itself from market competitors. As mentioned in the value proposition, the key needs we
-    are targeting are Shorter Procedure Time and Complete Resection.
-  </p>
-  </div>
-
-  <div id="sub-section-7-header-1">
-    <h3>5.1 Initial Functional Analysis</h3>
-    <p>
-      Based on the problem we have identified: we have conducted functional analysis to identify the key desired
-      functions of the product.
-    </p>
-  </div>
-
-  <div id="sub-section-7-header-2"></div>
-  <h3>5.2 Design Specifications</h3>
-  <p>
-    Based on the problem we have identified: we have conducted functional analysis to identify the key desired functions
-    of the product.
-  </p>
-  </div>
-
-  <div id="section-header-8"></div>
-  <h2> 6. Concept Generation and Selection </h2>
-  <p>
-    To fill the identified gap in the market, we have developed the following value proposition:
-    “SafeCut™ makes the process of endoscopic resection of gastric subepithelial lesions and early gastric cancer just
-    as safe and effective as surgical wedge resection, while being faster than the current standard-of-care endoscopic
-    resection technique, Endoscopic Submucosal Dissection (ESD). It also improves on challenges faced by endoscopists
-    when using the 3-in-1 Full Thickness Resection Device (FTRD® System) with regards to securely capturing submucosal
-    lesions and ensuring complete resection, and reducing the risk of perforation, while retaining the resection
-    efficiency.”
-  </p>
-  </div>
-
-  <div id="section-header-9"></div>
-  <h2> 7. Concept Design </h2>
-  <p>
-    Lorem Ipsum
-  </p>
-  </div>
-
-  <div id="sub-section-9-header-1">
-    <h3>7.1 Functional Analysis</h3>
-    <p>
-      Based on the problem we have identified: we have conducted functional analysis to identify the key desired
-      functions of the product.
-    </p>
-  </div>
-
-  <div id="section-header-10"></div>
-  <h2> 8. Prototyping </h2>
-  <p>
-    Lorem Ipsum
-  </p>
-  </div>
-
-  <div id="section-header-11"></div>
-  <h2> 9. Future Work </h2>
-  <p>
-    Lorem Ipsum
-  </p>
-
-  <!-- This is an example of how you might use the video component -->
-  <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-    subtitle="Video: Never gonna give you up?"></video-component>
-
-  </div>
-  </div>
-  <!-- This is an example of how you can use the references component to create references -->
-  <div id="references" class="references">
+    <br />
+    <br />
     <sl-divider></sl-divider>
-    <h2>References</h2>
-    <ul>
-      <li>
-        Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
-        http://www.dowjones.com/factiva/
-      </li>
-      <li>
-        Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
-        health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
-        39(5), 26-29.
-      </li>
-      <li>
-        Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
-        38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
-      </li>
-    </ul>
-  </div>
+
+    <div>
+      <div id="section-header-5">
+        <h2> 3. Market Analysis and Existing Solutions </h2>
+        <p>
+          We conducted market analysis of existing solutions and products for Endoscopic Submucosal Resection. Each
+          existing
+          solution has its strengths and weaknesses.
+        </p>
+      </div>
+
+      <div id="section-header-6">
+        <h2> 4. Value Proposition </h2>
+        <p>
+          To fill the identified gap in the market, we have developed the following value proposition:
+          “SafeCut™ makes the process of endoscopic resection of gastric subepithelial lesions and early gastric cancer
+          just
+          as safe and effective as surgical wedge resection, while being faster than the current standard-of-care
+          endoscopic
+          resection technique, Endoscopic Submucosal Dissection (ESD). It also improves on challenges faced by
+          endoscopists
+          when using the 3-in-1 Full Thickness Resection Device (FTRD® System) with regards to securely capturing
+          submucosal
+          lesions and ensuring complete resection, and reducing the risk of perforation, while retaining the resection
+          efficiency.”
+        </p>
+      </div>
+
+      <div id="section-header-7">
+        <h2> 5. Design Methodology </h2>
+        <p>
+          The Jobs To Be Done represents the necessary tasks that the device has to fulfill. Pains and Gains represent
+          where
+          our device can differentiate itself from market competitors. As mentioned in the value proposition, the key
+          needs
+          we
+          are targeting are Shorter Procedure Time and Complete Resection.
+        </p>
+      </div>
+
+      <div id="sub-section-7-header-1">
+        <h3>5.1 Initial Functional Analysis</h3>
+        <p>
+          Based on the problem we have identified: we have conducted functional analysis to identify the key desired
+          functions of the product.
+        </p>
+      </div>
+
+      <div id="sub-section-7-header-2">
+        <h3>5.2 Design Specifications</h3>
+        <p>
+          Based on the problem we have identified: we have conducted functional analysis to identify the key desired
+          functions
+          of the product.
+        </p>
+      </div>
+
+      <div id="section-header-8">
+        <h2> 6. Concept Generation and Selection </h2>
+        <p>
+          To fill the identified gap in the market, we have developed the following value proposition:
+          “SafeCut™ makes the process of endoscopic resection of gastric subepithelial lesions and early gastric cancer
+          just
+          as safe and effective as surgical wedge resection, while being faster than the current standard-of-care
+          endoscopic
+          resection technique, Endoscopic Submucosal Dissection (ESD). It also improves on challenges faced by
+          endoscopists
+          when using the 3-in-1 Full Thickness Resection Device (FTRD® System) with regards to securely capturing
+          submucosal
+          lesions and ensuring complete resection, and reducing the risk of perforation, while retaining the resection
+          efficiency.”
+        </p>
+      </div>
+
+      <div id="section-header-9">
+        <h2> 7. Concept Design </h2>
+        <p>
+          Lorem Ipsum
+        </p>
+      </div>
+
+      <div id="sub-section-9-header-1">
+        <h3>7.1 Functional Analysis</h3>
+        <p>
+          Based on the problem we have identified: we have conducted functional analysis to identify the key desired
+          functions of the product.
+        </p>
+      </div>
+
+      <div id="section-header-10">
+        <h2> 8. Prototyping </h2>
+        <p>
+          Lorem Ipsum
+        </p>
+      </div>
+
+      <div id="section-header-11">
+        <h2> 9. Future Work </h2>
+        <p>
+          Lorem Ipsum
+        </p>
+
+        <!-- This is an example of how you might use the image component -->
+        <image-component tag="image" source="assets/requirement.png"
+          subtitle="Image 1: iDP suggested pathway"></image-component>
+
+        <!-- This is an example of how you might use the video component -->
+        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          subtitle="Video: Never gonna give you up?"></video-component>
+      </div>
+    </div>
+
+    <!-- This is an example of how you can use the references component to create references -->
+    <div id="references" class="references">
+      <sl-divider></sl-divider>
+      <h2>References</h2>
+      <ul>
+        <li>
+          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
+          http://www.dowjones.com/factiva/
+        </li>
+        <li>
+          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
+          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
+          39(5), 26-29.
+        </li>
+        <li>
+          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
+          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
+        </li>
+      </ul>
+    </div>
   </div>
 
   <!-- This is the code to display the scroll to top button for ergonomic -->
