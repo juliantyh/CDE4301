@@ -36,9 +36,10 @@
 <body>
   <div class="content">
     <!--  image component -->
-    <image-component tag="image" source="assets/logos/NUS-DUKENUS.png" subtitle=""
-      style="max-width: 50%"></image-component>
-    <image-component tag="image" source="assets/logos/safecut.png" subtitle="" style="max-width: 50%"></image-component>
+    <image-component tag="image" source="assets/logos/NUS-DUKENUS.png" subtitle="" style="max-width: 50%"
+      style="text-align:center"></image-component>
+    <image-component tag="image" source="assets/logos/safecut.png" subtitle="" style="max-width: 50%"
+      style="text-align:center"></image-component>
     <h1>CDE4301 Innovation & Design Capstone</h1>
     <h2>EIM-457: A Safe and Effective Way to Completely Excise Gastrointestinal Lesions Endoscopically</h2>
 
@@ -170,17 +171,34 @@
         </sl-tree-item>
 
         <sl-tree-item expanded>
-          <a href="#section-header-12">11. Future Work</a>
+          <a href="#section-header-13">11. Future Work</a>
         </sl-tree-item>
 
         <sl-tree-item>
           <a href="#references">References</a>
         </sl-tree-item>
+
+        <sl-tree-item expanded>
+          <a href="#appendix">Appendix</a>
+          <sl-tree-item>
+            <a href="#appendix-a">Appendix A. Endoscopic Full Thickness Resection of Transverse Colon Carcinoma</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#appendix-b">Appendix B. Ovesco FTRD Endoscopic Full Thickness Resection System Set Up</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#appendix-c">Appendix C. Hybrid Resection Techniques ESD and FTRD</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#appendix-d">Appendix D. Clinical Evidence for FTRD® in the stomach and duodenum</a>
+          </sl-tree-item>
+        </sl-tree-item>
       </sl-tree>
     </div>
 
+    <sl-divider></sl-divider>
+
     <div>
-      <!-- This is an example of what a section might look like -->
       <div id="section-header-1">
         <h2> Acknowledgements </h2>
         <p>
@@ -208,6 +226,8 @@
         </p>
       </div>
 
+      <sl-divider></sl-divider>
+
       <div id="section-header-2">
         <h2> List of Common Acronyms </h2>
         <!-- This is an example of how you might use the table component -->
@@ -215,6 +235,8 @@
           <div id="table-1"></div>
         </table-component>
       </div>
+
+      <sl-divider></sl-divider>
 
       <div id="section-header-3">
         <h2> 1. Introduction </h2>
@@ -227,6 +249,8 @@
         </p>
       </div>
 
+      <sl-divider></sl-divider>
+
       <div>
         <div id="section-header-4">
           <h2> 2. Background</h2>
@@ -237,7 +261,7 @@
             Subepithelial lesions (SELs) in the digestive tract refer to abnormal lesions originating from the various
             layers under the mucosa, and upper gastrointestinal SELs are the most common (Su et al., 2021).
           </p>
-          <p>>
+          <p>
             They are commonly identified during routine endoscopic procedures. Gastric Subepithelial lesions are a
             rather
             frequent finding, occurring in about 0.36% (or around 1 in 300) of routine upper GI-endoscopies
@@ -247,7 +271,7 @@
           <!-- image component -->
           <image-component tag="image" source="assets/lesion.png"
             subtitle="Figure 1: Subepithelial lesion identified in the fundus of the stomach during endoscopy (Perbtani et al., 2020)"
-            style="max-width: 50%"></image-component>
+            style="max-width: 50%" style="text-align:center"></image-component>
           <p>
             Subepithelial lesions are often incidentally discovered and often go unnoticed by patients until they are
             discovered during screening for unrelated conditions. If symptoms do exist, chronic anaemia from
@@ -443,6 +467,8 @@
           </p>
         </div>
 
+        <sl-divider></sl-divider>
+
         <div id="section-header-7">
           <h2>5. Market Analysis of Existing Solutions</h2>
           <p>
@@ -460,8 +486,12 @@
           <image-component tag="image" source="assets/epithelial-resection-tools.png"
             subtitle="Table 4: Analysis of Current Tools for Epithelial Lesion Resection"></image-component>
 
+          <br>
+
           <image-component tag="image" source="assets/subepithelial-resection-tools.png"
             subtitle="Table 5: Analysis of Current Tools for Sub-epithelial Lesion Resection"></image-component>
+
+          <br>
 
           <image-component tag="image" source="assets/improve-ftrd.png"
             subtitle="Table 6: Analysis of Different Procedures Available in the Market"></image-component>
@@ -475,6 +505,8 @@
           <image-component tag="image" source="assets/ppm.png"
             subtitle="Figure 6: Product Positioning Map"></image-component>
         </div>
+
+        <sl-divider></sl-divider>
 
         <div id="section-header-8">
           <h2>6. Value Proposition</h2>
@@ -492,9 +524,13 @@
           <image-component tag="image" source="assets/customer-benefits.png"
             subtitle="Table 7: Customer Benefits Table"></image-component>
 
+          <br>
+
           <image-component tag="image" source="assets/economic-value.png"
             subtitle="Table 8: Economic Value Table"></image-component>
         </div>
+
+        <sl-divider></sl-divider>
 
         <div>
           <div id="section-header-9">
@@ -519,8 +555,12 @@
               Based on the Jobs-to-be-Done, Pains and Gains we have identified, we collaborated with our clinical mentor
               to identify our Must-Have Criteria and Nice-to-Have Criteria.
             </p>
+
             <image-component tag="image" source="assets/must-have.png"
               subtitle="Table 10: Must-Have Criteria"></image-component>
+
+            <br>
+
             <image-component tag="image" source="assets/nice-to-have.png"
               subtitle="Table 11: Nice-to-Have Criteria"></image-component>
           </div>
@@ -604,6 +644,8 @@
           </div>
         </div>
 
+        <sl-divider></sl-divider>
+
         <div id="section-header-10">
           <h2>8. Design Specifications</h2>
           <image-component tag="image" source="assets/specs/specs-hotsnare.png" subtitle=""></image-component>
@@ -616,6 +658,8 @@
           <image-component tag="image" source="assets/specs/specs-ultrasound-anchor.png"
             subtitle="Table 15: Specifications Table"></image-component>
         </div>
+
+        <sl-divider></sl-divider>
 
         <div>
           <div id="section-header-11">
@@ -645,13 +689,15 @@
             <h3>Stage 1: Place Mini-Ultrasound Probe</h3>
 
             <image-component tag="image" source="assets/procedure/stage1.png"
-              subtitle="Figure 10: Procedure Steps 1 and 2" style="max-width: 50%"></image-component>
+              subtitle="Figure 10: Procedure Steps 1 and 2" style="max-width: 50%"
+              style="text-align:center"></image-component>
             <p>
               This stage anchors the Miniature Ultrasound Probe beside the lesion to monitor and obtain visual feedback
               that the lesion is completely captured within the device.
             </p>
             <image-component tag="image" source="assets/helical-probe.png"
-              subtitle="Figure 11: UM-DP12-25R Helical Miniature Probe (UM-DP12-25R Helical Miniature Probe 2024)"></image-component>
+              subtitle="Figure 11: UM-DP12-25R Helical Miniature Probe (UM-DP12-25R Helical Miniature Probe 2024)"
+              style="max-width: 50%" style="text-align:center"></image-component>
             <p>
               It can perform Dual-Plane Reconstruction (DPR) which makes it possible to display radial and linear
               ultrasound images simultaneously on a single monitor in real time. By generating two dimensions that
@@ -672,7 +718,8 @@
             <h3>Stage 2: Position Cookie Cutter to Capture and Secure Lesion</h3>
 
             <image-component tag="image" source="assets/procedure/stage2.png"
-              subtitle="Figure 14: Procedure Step 3 and 4" style="max-width: 50%"></image-component>
+              subtitle="Figure 14: Procedure Step 3 and 4" style="max-width: 50%"
+              style="text-align:center"></image-component>
             <p>
               This stage is where the endoscope approaches the subepithelial lesion, and the tissue helix descends to
               grab it. Using tissue helix as guide, the cookie cutter is positioned over the lesion and pushes down on
@@ -681,8 +728,8 @@
 
             <h3>Stage 3: Downward Slice</h3>
 
-            <image-component tag="image" source="assets/procedure/stage3.png"
-              subtitle="Figure 15: Procedure Step 5" style="max-width: 50%"></image-component>
+            <image-component tag="image" source="assets/procedure/stage3.png" subtitle="Figure 15: Procedure Step 5"
+              style="max-width: 50%" style="text-align:center"></image-component>
             <p>
               This stage is where the cookie cutter slices downward around the subepithelial lesion, creating a
               cylindrical slice of stomach tissue.
@@ -699,8 +746,8 @@
 
             <h3>Stage 5: Deploy Clip</h3>
 
-            <image-component tag="image" source="assets/procedure/stage5.png"
-              subtitle="Figure 17: Procedure Step 6" style="max-width: 50%"></image-component>
+            <image-component tag="image" source="assets/procedure/stage5.png" subtitle="Figure 17: Procedure Step 6"
+              style="max-width: 50%" style="text-align:center"></image-component>
             <p>
               This stage is where after obtaining confirmation that the lesion is completely captured, the endoscopic
               clip is deployed to trap the lesion. We will use the OVESCO over-the-scope clip (OTSC).
@@ -718,16 +765,20 @@
             <h3>Stage 6: Slice Base</h3>
 
             <image-component tag="image" source="assets/procedure/stage6.png"
-              subtitle="Figure 19: Procedure Step 7 and 8" style="max-width: 50%"></image-component>
+              subtitle="Figure 19: Procedure Step 7 and 8" style="max-width: 50%"
+              style="text-align:center"></image-component>
             <p>
               This stage is where the snare is heated and then pulled, slicing the base of cylindrical section. The
               subepithelial lesion is resected above the endoscopic clip. The mucosa and submucosal defects are closed
               by the previously applied endoscopic clip.
             </p>
             <image-component tag="image" source="assets/hot-snare.png"
-              subtitle="Figure 20: Micro-Tech Precise Cut Hot Snare (Hot Snares 2024)"></image-component>
+              subtitle="Figure 20: Micro-Tech Precise Cut Hot Snare (Hot Snares 2024)" style="max-width: 50%"
+              style="text-align:center"></image-component>
           </div>
         </div>
+
+        <sl-divider></sl-divider>
 
         <div>
           <div id="section-header-12">
@@ -832,7 +883,7 @@
               snare and a forceps attachment.
             </p>
 
-            <image-component tag="image" source="assets/prototyping/dr-ravi-testing.png"
+            <image-component tag="image" source="assets/prototyping/dr-ravi-model.png"
               subtitle="Figure 28: Clinical Mentor Modified Third 3D Printed Endoscope Model for EFTR"></image-component>
 
             <image-component tag="image" source="assets/prototyping/dr-ravi-sim-eftr.png"
@@ -849,6 +900,8 @@
               subtitle=""></image-component>
           </div>
         </div>
+
+        <sl-divider></sl-divider>
 
         <div id="section-header-13">
           <h2>11. Future Work</h2>
@@ -892,18 +945,13 @@
           </p>
           <image-component tag="image" source="assets/projected-timeline.png"
             subtitle="Figure 30: Projected Timeline for Academic Year 24/25 Semester 2"></image-component>
-          <p></p>
+          <br>
           <image-component tag="image" source="assets/gantt-chart.png"
             subtitle="Figure 31. Gantt Chart for Academic Year 24/25 Semester 2"></image-component>
         </div>
 
-        <iframe src="https://drive.google.com/file/d/1BC34WfB-Zi8JcyQ1D3ENzbDySOiYxncK/preview" width="640" height="480" allow="autoplay"></iframe>
-        
-        <div>
-          <!-- This is an example of how you might use the video component -->
-          <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            subtitle="Video: Never gonna give you up?"></video-component>
-        </div>
+        <iframe src="https://drive.google.com/file/d/1BC34WfB-Zi8JcyQ1D3ENzbDySOiYxncK/preview" width="640" height="480"
+          allow="autoplay"></iframe>
       </div>
 
       <!-- This is an example of how you can use the references component to create references -->
@@ -1106,17 +1154,56 @@
           </li>
         </ul>
       </div>
-    </div>
+      
+      <sl-divider></sl-divider>
 
-    <!-- This is the code to display the scroll to top button for ergonomic -->
-    <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
-    <!-- but it might reduce the user experience. -->
-    <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
-      <sl-icon name="arrow-up" label="Settings"></sl-icon>
-    </sl-button>
+      <div>
+        <div id="appendix">
+          <h2>Appendix</h2>
+        </div>
 
-    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
-    <script type="module" src="./components/table-component/table-component.js"></script>
+        <div id="appendix-a">
+          <!-- embed youtube video -->
+          <h3>Appendix A. Endoscopic Full Thickness Resection of Transverse Colon Carcinoma</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/OG6uwWlItuU?si=IXsA_0H5ubHrTujB"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div id="appendix-b">
+          <h3>Appendix B. Ovesco FTRD Endoscopic Full Thickness Resection System Set Up</h3>
+          <!-- embed youtube video -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/j5IY1cIq6rQ?si=u9ahKOxoGuySLCwO"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div id="appendix-c">
+          <h3>Appendix C. Hybrid Resection Techniques ESD and FTRD</h3>
+          <image-component tag="image" source="assets/appendix/appendix-c-1.png" subtitle=""></image-component>
+          <image-component tag="image" source="assets/appendix/appendix-c-2.png" subtitle=""></image-component>
+          <p>https://ovesco.com/wp-content/uploads/media/PDFs/Applicationfocus_HybridRese_ENG_Rev01.pdf</p>
+        </div>
+
+        <div id="appendix-d">
+          <h3>Appendix D. Clinical Evidence for FTRD® in the stomach and duodenum</h3>
+          <image-component tag="image" source="assets/appendix/appendix-d-1.png" subtitle=""></image-component>
+          <image-component tag="image" source="assets/appendix/appendix-d-2.png" subtitle=""></image-component>
+          <p>https://ovesco.com/wp-content/uploads/media/PDFs/OVE_FTRD_CF_ENG_Rev02.pdf</p>
+        </div>
+      </div>
+
+      <!-- This is the code to display the scroll to top button for ergonomic -->
+      <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
+      <!-- but it might reduce the user experience. -->
+      <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
+        <sl-icon name="arrow-up" label="Settings"></sl-icon>
+      </sl-button>
+
+      <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+      <script type="module" src="./components/table-component/table-component.js"></script>
 </body>
 
 </html>
