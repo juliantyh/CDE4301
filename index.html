@@ -36,9 +36,9 @@
 <body>
   <div class="content">
     <!--  image component -->
-    <image-component tag="image" source="assets/logos/NUS-DUKENUS.png"></image-component>
-    <image-component tag="image" source="assets/logos/safecut.png"></image-component>
-    <h1>Duke-NUS Health Innovator Programme</h1>
+    <image-component tag="image" source="assets/logos/NUS-DUKENUS.png" subtitle=""></image-component>
+    <image-component tag="image" source="assets/logos/safecut.png" subtitle=""></image-component>
+    <h1>CDE4301 Innovation & Design Capstone Interim Report</h1>
     <h1>EIM-457: A Safe and Effective Way to Completely Excise Gastrointestinal Lesions Endoscopically</h1>
 
     <!-- This is the team member component use to display details about your team members -->
@@ -542,29 +542,31 @@
             <image-component tag="image" source="assets/ideabox.png"
               subtitle="Table 12: Ideabox Concept Generation Technique"></image-component>
 
-            <image-component tag="image" source="assets/ideabox-concept1.png"></image-component>
+            <image-component tag="image" source="assets/ideabox-concept1.png" subtitle=""></image-component>
 
-            <image-component tag="image" source="assets/concept1.png"></image-component>
+            <image-component tag="image" source="assets/concept1.png" subtitle=""></image-component>
 
-            <image-component tag="image" source="assets/ideabox-concept2.png"></image-component>
+            <image-component tag="image" source="assets/ideabox-concept2.png" subtitle=""></image-component>
 
             <image-component tag="image" source="assets/concept2.png"
               subtitle="Table 13: Concept Details"></image-component>
 
             <p>
-              Concept 1A and 1B both employ a biomaterial to detect the lesion's position, along with a metal mesh to
+              <b>Concept 1A and 1B</b> both employ a biomaterial to detect the lesion's position, along with a metal
+              mesh to
               constrict the lesion. However, Concept 1A incorporates an electrical pressure sensor for lesion detection,
               while Concept 1B utilizes microneedles and biochemical detection to visually indicate the lesion’s
               position on the mucosal surface. Both concepts then utilize an Endoloop with clips for wound closure, with
               the biomaterial also assisting in this process.
             </p>
             <p>
-              Concept 1C streamlines the approaches of Concepts 1A and 1B by utilizing a miniaturized version of the
+              <b>Concept 1C</b> streamlines the approaches of Concepts 1A and 1B by utilizing a miniaturized version of
+              the
               existing Apollo Overstitch technology. This concept creates a purse-string stitch around the lesion,
               pulling the corners of any flat lesion into a pedunculated shape, facilitating easier cutting.
             </p>
             <p>
-              Concept 2 introduces a "Cookie Cutter" mechanism for full-thickness resection. It features a Micro
+              <b>Concept 2</b> introduces a "Cookie Cutter" mechanism for full-thickness resection. It features a Micro
               Ultrasound Probe positioned adjacent to the lesion to monitor potential cuts into vital structures and to
               ensure complete capture of the lesion. This concept employs a tissue helix/forceps to grasp the lesion,
               with it acting as a guide to the lesion. The Cookie Cutter is positioned over the lesion and pushes down
@@ -594,20 +596,20 @@
               Concept 2.
             </p>
 
-            <image-component tag="image" source="assets/pughmatrix.png"
+            <image-component tag="image" source="assets/pugh-matrix.png"
               subtitle="Table 14: Pugh Matrix for Concept Selection"></image-component>
           </div>
         </div>
 
         <div id="section-header-10">
           <h2>8. Design Specifications</h2>
-          <image-component tag="image" source="assets/specs/specs-hotsnare.png"></image-component>
-          <image-component tag="image" source="assets/specs/specs-otsc.png"></image-component>
-          <image-component tag="image" source="assets/specs/specs-otsc2.png"></image-component>
-          <image-component tag="image" source="assets/specs/specs-cookiecutter.png"></image-component>
-          <image-component tag="image" source="assets/specs/specs-grasper.png"></image-component>
-          <image-component tag="image" source="assets/specs/specs-ultrasound1.png"></image-component>
-          <image-component tag="image" source="assets/specs/specs-ultrasound2.png"></image-component>
+          <image-component tag="image" source="assets/specs/specs-hotsnare.png" subtitle=""></image-component>
+          <image-component tag="image" source="assets/specs/specs-otsc.png" subtitle=""></image-component>
+          <image-component tag="image" source="assets/specs/specs-otsc2.png" subtitle=""></image-component>
+          <image-component tag="image" source="assets/specs/specs-cookiecutter.png" subtitle=""></image-component>
+          <image-component tag="image" source="assets/specs/specs-grasper.png" subtitle=""></image-component>
+          <image-component tag="image" source="assets/specs/specs-ultrasound1.png" subtitle=""></image-component>
+          <image-component tag="image" source="assets/specs/specs-ultrasound2.png" subtitle=""></image-component>
           <image-component tag="image" source="assets/specs/specs-ultrasound-anchor.png"
             subtitle="Table 15: Specifications Table"></image-component>
         </div>
@@ -636,9 +638,9 @@
             <h3>9.2 Detailed Concept Design</h3>
             <image-component tag="image" source="assets/eftr-steps.png"
               subtitle="Figure 9: Technique of Exposed Endoscopic Full Thickness Resection using our proposed device"></image-component>
-            <p>
-              Stage 1: Place Mini-Ultrasound Probe
-            </p>
+
+            <h4>Stage 1: Place Mini-Ultrasound Probe</h4>
+
             <image-component tag="image" source="assets/procedure/stage1.png"
               subtitle="Figure 10: Procedure Steps 1 and 2"></image-component>
             <p>
@@ -663,9 +665,9 @@
             </p>
             <image-component tag="image" source="assets/probe-specs.png"
               subtitle="Figure 13: Probe Specifications that make it compatible with existing endoscopes (UM-DP12-25R Helical Miniature Probe 2024)"></image-component>
-            <p>
-              Stage 2: Position Cookie Cutter to Capture and Secure Lesion
-            </p>
+            
+            <h4>Stage 2: Position Cookie Cutter to Capture and Secure Lesion</h4>
+
             <image-component tag="image" source="assets/procedure/stage2.png"
               subtitle="Figure 14: Procedure Step 3 and 4"></image-component>
             <p>
@@ -673,18 +675,16 @@
               grab it. Using tissue helix as guide, the cookie cutter is positioned over the lesion and pushes down on
               the stomach wall for a vacuum seal to be created while suction is applied.
             </p>
-            <p>
-              Stage 3: Downward Slice
-            </p>
+
+            <h4>Stage 3: Downward Slice</h4>
+
             <image-component tag="image" source="assets/procedure/stage3.png"
               subtitle="Figure 15: Procedure Step 5"></image-component>
             <p>
               This stage is where the cookie cutter slices downward around the subepithelial lesion, creating a
               cylindrical slice of stomach tissue.
             </p>
-            <p>
-              Stage 4: Feedback on Complete Capture
-            </p>
+            <h4>Stage 4: Feedback on Complete Capture</h4>
             <p>
               This stage is where the endoscopist checks the ultrasound view from the miniature probe to obtain visual
               feedback that the lesion is completely captured within the device. Studies show that AI models are
@@ -693,9 +693,9 @@
             </p>
             <image-component tag="image" source="assets/lesion-feedback.png"
               subtitle="Figure 16: Example images of Subepithelial lesion captured from Helical Miniature Endoscopic Ultrasound Probe. Camera view, Ultrasound view and PREDICT type determined from AI Model (Matsuura et al., 2024)"></image-component>
-            <p>
-              Stage 5: Deploy Clip
-            </p>
+            
+            <h4>Stage 5: Deploy Clip</h4>
+
             <image-component tag="image" source="assets/procedure/stage5.png"
               subtitle="Figure 17: Procedure Step 6"></image-component>
             <p>
@@ -711,9 +711,9 @@
               nitinol clip provides constant compression forces of 8 to 9 Newton, which is necessary for successful
               permanent closure of defects (Mennigen et al., 2014; Kirschniak et al., 2007).
             </p>
-            <p>
-              Stage 6: Slice Base
-            </p>
+
+            <h4>Stage 6: Slice Base</h4>
+
             <image-component tag="image" source="assets/procedure/stage6.png"
               subtitle="Figure 19: Procedure Step 7 and 8"></image-component>
             <p>
@@ -782,7 +782,7 @@
               We simulated EMR which is a simpler procedure to answer some questions we had about the prototype and
               procedure.
             </p>
-            <image-component tag="image" source="assets/prototyping/emr-qns.png"></image-component>
+            <image-component tag="image" source="assets/prototyping/emr-qns.png" subtitle=""></image-component>
 
             <image-component tag="image" source="assets/prototyping/sim-emr.png"
               subtitle="Figure 25: Attempting Simulated Endoscopic Mucosal Resection"></image-component>
@@ -791,7 +791,7 @@
               From this prototype, we learnt that:
             </p>
 
-            <image-component tag="image" source="assets/prototyping/emr-qns-ans.png"></image-component>
+            <image-component tag="image" source="assets/prototyping/emr-qns-ans.png" subtitle=""></image-component>
           </div>
 
           <div id="sub-section-12-header-4">
@@ -810,7 +810,7 @@
               deploy the forceps because attempting this procedure requires multiple personnel.
             </p>
 
-            <image-component tag="image" source="assets/prototyping/eftr-qns.png"></image-component>
+            <image-component tag="image" source="assets/prototyping/eftr-qns.png" subtitle=""></image-component>
 
             <image-component tag="image" source="assets/prototyping/sim-eftr.png"
               subtitle="Figure 27: Attempting Simulated Endoscopic Full Thickness Resection"></image-component>
@@ -819,7 +819,7 @@
               From this prototype, we learnt that:
             </p>
 
-            <image-component tag="image" source="assets/prototyping/eftr-qns-ans.png"></image-component>
+            <image-component tag="image" source="assets/prototyping/eftr-qns-ans.png" subtitle=""></image-component>
           </div>
 
           <div id="sub-section-12-header-5">
@@ -840,8 +840,10 @@
               and gained the following insights.
             </p>
 
-            <image-component tag="image" source="assets/prototyping/dr-ravi-eftr-qns-ans-1.png"></image-component>
-            <image-component tag="image" source="assets/prototyping/dr-ravi-eftr-qns-ans-2.png"></image-component>
+            <image-component tag="image" source="assets/prototyping/dr-ravi-eftr-qns-ans-1.png"
+              subtitle=""></image-component>
+            <image-component tag="image" source="assets/prototyping/dr-ravi-eftr-qns-ans-2.png"
+              subtitle=""></image-component>
           </div>
         </div>
 
@@ -887,16 +889,12 @@
           </p>
           <image-component tag="image" source="assets/projected-timeline.png"
             subtitle="Figure 30: Projected Timeline for Academic Year 24/25 Semester 2"></image-component>
-
+          <p></p>
           <image-component tag="image" source="assets/gantt-chart.png"
             subtitle="Figure 31. Gantt Chart for Academic Year 24/25 Semester 2"></image-component>
         </div>
 
         <div>
-          <!-- This is an example of how you might use the image component -->
-          <image-component tag="image" source="assets/requirement.png"
-            subtitle="Image 1: iDP suggested pathway"></image-component>
-
           <!-- This is an example of how you might use the video component -->
           <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
             subtitle="Video: Never gonna give you up?"></video-component>
@@ -949,109 +947,157 @@
             https://www.gleneagles.com.sg/tests-treatments/endoscopic-submucosal-dissection
           </li>
           <li>
-            FTRD® Grasper. Ovesco Endoscopy AG. (2022b, December 12). https://ovesco.com/ftrd-system/ftrd-grasper/ 
+            FTRD® Grasper. Ovesco Endoscopy AG. (2022b, December 12). https://ovesco.com/ftrd-system/ftrd-grasper/
           </li>
           <li>
-            Gastroduodenal FTRD®. Ovesco Endoscopy AG. (2023a, March 30). https://ovesco.com/ftrd-system/gastroduodenal-ftrd/#/eluidde05b763_1_1 
+            Gastroduodenal FTRD®. Ovesco Endoscopy AG. (2023a, March 30).
+            https://ovesco.com/ftrd-system/gastroduodenal-ftrd/#/eluidde05b763_1_1
           </li>
           <li>
-            Global Market Insights. (2023, August). Endoscopy Market - By Product, By End-use & Forecast, 2023 – 2032 . Global Market Insights Inc. https://www.gminsights.com/industry-analysis/endoscopy-market 
+            Global Market Insights. (2023, August). Endoscopy Market - By Product, By End-use & Forecast, 2023 – 2032 .
+            Global Market Insights Inc. https://www.gminsights.com/industry-analysis/endoscopy-market
           </li>
           <li>
-            Guardus overtube 25CM 9.8-11.6mm scope OD [3/BX]. GUARDUS OVERTUBE 25CM 9.8-11.6MM SCOPE OD [3/BX] BX00711147 | Shop STERIS. (2024). https://shop.steris.com/en/us/products/guardus-overtube-esophageal-bx00711147 
+            Guardus overtube 25CM 9.8-11.6mm scope OD [3/BX]. GUARDUS OVERTUBE 25CM 9.8-11.6MM SCOPE OD [3/BX]
+            BX00711147 | Shop STERIS. (2024).
+            https://shop.steris.com/en/us/products/guardus-overtube-esophageal-bx00711147
           </li>
           <li>
-            Guardus® overtube - gastric. Duomed. (2024). https://www.duomed.com/en-DK/overtube/guardusr-overtube-gastric 
+            Guardus® overtube - gastric. Duomed. (2024). https://www.duomed.com/en-DK/overtube/guardusr-overtube-gastric
           </li>
           <li>
-            Guo, Y., Jing, X., Zhang, J., Ding, X., Li, X., Mao, T., & Tian, Z. (2019). Endoscopic removal of gastrointestinal stromal tumors in the stomach: A single-center experience. Gastroenterology Research and Practice, 2019, 1–9. https://doi.org/10.1155/2019/3087298 
+            Guo, Y., Jing, X., Zhang, J., Ding, X., Li, X., Mao, T., & Tian, Z. (2019). Endoscopic removal of
+            gastrointestinal stromal tumors in the stomach: A single-center experience. Gastroenterology Research and
+            Practice, 2019, 1–9. https://doi.org/10.1155/2019/3087298
           </li>
           <li>
-            Healthcare Purchasing News. (2022, October 26). The Growing Demand for Endoscopy. https://www.hpnonline.com/surgical-critical-care/article/21284716/the-growing-demand-for-endoscopy , 
+            Healthcare Purchasing News. (2022, October 26). The Growing Demand for Endoscopy.
+            https://www.hpnonline.com/surgical-critical-care/article/21284716/the-growing-demand-for-endoscopy ,
           </li>
           <li>
-            Hot Snares. Micro-Tech Endoscopy. (2024, July 9). https://mtendoscopy.com/products/gastroenterology/resection-retrieval/polypectomy/hot-snares/ 
+            Hot Snares. Micro-Tech Endoscopy. (2024, July 9).
+            https://mtendoscopy.com/products/gastroenterology/resection-retrieval/polypectomy/hot-snares/
           </li>
           <li>
-            Humphris, J. L., & Jones, D. B. (2008). Subepithelial mass lesions in the upper gastrointestinal tract. Journal of Gastroenterology and Hepatology, 23(4), 556–566. https://doi.org/10.1111/j.1440-1746.2007.05232.x 
+            Humphris, J. L., & Jones, D. B. (2008). Subepithelial mass lesions in the upper gastrointestinal tract.
+            Journal of Gastroenterology and Hepatology, 23(4), 556–566. https://doi.org/10.1111/j.1440-1746.2007.05232.x
           </li>
           <li>
-            Ishikawa, K., Inomata, M., Etoh, T., Shiromizu, A., Shiraishi, N., Arita, T., & Kitano, S. (2006). Long-term outcome of laparoscopic wedge resection for gastric submucosal tumor compared with open wedge resection. Surgical Laparoscopy, Endoscopy &amp; Percutaneous Techniques, 16(2), 82–85. https://doi.org/10.1097/00129689-200604000-00005 
+            Ishikawa, K., Inomata, M., Etoh, T., Shiromizu, A., Shiraishi, N., Arita, T., & Kitano, S. (2006). Long-term
+            outcome of laparoscopic wedge resection for gastric submucosal tumor compared with open wedge resection.
+            Surgical Laparoscopy, Endoscopy &amp; Percutaneous Techniques, 16(2), 82–85.
+            https://doi.org/10.1097/00129689-200604000-00005
           </li>
           <li>
-            Joensuu, H., Hohenberger, P., & Corless, C. L. (2013). Gastrointestinal stromal tumour. The Lancet, 382(9896), 973–983. https://doi.org/10.1016/s0140-6736(13)60106-3 
+            Joensuu, H., Hohenberger, P., & Corless, C. L. (2013). Gastrointestinal stromal tumour. The Lancet,
+            382(9896), 973–983. https://doi.org/10.1016/s0140-6736(13)60106-3
           </li>
           <li>
-            Kaan, H. L., & Ho, K. Y. (2020). Endoscopic Full Thickness Resection for Gastrointestinal Tumors - Challenges and Solutions. Clinical Endoscopy, 53(5), 541–549. https://doi.org/10.5946/ce.2019.161 
+            Kaan, H. L., & Ho, K. Y. (2020). Endoscopic Full Thickness Resection for Gastrointestinal Tumors -
+            Challenges and Solutions. Clinical Endoscopy, 53(5), 541–549. https://doi.org/10.5946/ce.2019.161
           </li>
           <li>
-            Kirschniak, A., Kratt, T., Stüker, D., Braun, A., Schurr, M.-O., & Königsrainer, A. (2007). A new endoscopic over-the-scope clip system for treatment of lesions and bleeding in the GI tract: First clinical experiences. Gastrointestinal Endoscopy, 66(1), 162–167. https://doi.org/10.1016/j.gie.2007.01.034 
+            Kirschniak, A., Kratt, T., Stüker, D., Braun, A., Schurr, M.-O., & Königsrainer, A. (2007). A new endoscopic
+            over-the-scope clip system for treatment of lesions and bleeding in the GI tract: First clinical
+            experiences. Gastrointestinal Endoscopy, 66(1), 162–167. https://doi.org/10.1016/j.gie.2007.01.034
           </li>
           <li>
-            Lee, H. L. (2023, April 11). PM Lee Hsien Loong at the “Singapore Ageing: Issues and Challenges Ahead” book launch. Prime Minister’s Office Singapore. https://www.pmo.gov.sg/Newsroom/PM-Lee-Hsien-Loong-at-the-Singapore-Ageing-Issues-and-Challenges-Ahead-Book-Launch 
+            Lee, H. L. (2023, April 11). PM Lee Hsien Loong at the “Singapore Ageing: Issues and Challenges Ahead” book
+            launch. Prime Minister’s Office Singapore.
+            https://www.pmo.gov.sg/Newsroom/PM-Lee-Hsien-Loong-at-the-Singapore-Ageing-Issues-and-Challenges-Ahead-Book-Launch
           </li>
           <li>
-            Madhavan, A., Phillips, A. W., Donohoe, C. L., Willows, R. J., Immanuel, A., Verril, M., & Griffin, S. M. (2018). Surgical management of gastric gastrointestinal stromal tumours: Comparison of outcomes for local and radical resection. Gastroenterology Research and Practice, 2018, 1–7. https://doi.org/10.1155/2018/2140253 
+            Madhavan, A., Phillips, A. W., Donohoe, C. L., Willows, R. J., Immanuel, A., Verril, M., & Griffin, S. M.
+            (2018). Surgical management of gastric gastrointestinal stromal tumours: Comparison of outcomes for local
+            and radical resection. Gastroenterology Research and Practice, 2018, 1–7.
+            https://doi.org/10.1155/2018/2140253
           </li>
           <li>
-            Matsuura, N., Kato, M., Iwata, K., Miyazaki, K., Masunaga, T., Kubosawa, Y., Mizutani, M., Hayashi, Y., Takabayashi, K., Takatori, Y., Nakayama, A., Okabayashi, K., Kawakubo, H., Kitagawa, Y., & Yahagi, N. (2024). Endoscopic ultrasound classification for prediction of endoscopic submucosal dissection resectability: Predict classification. Endoscopy International Open, 12(09). https://doi.org/10.1055/a-2387-1754 
+            Matsuura, N., Kato, M., Iwata, K., Miyazaki, K., Masunaga, T., Kubosawa, Y., Mizutani, M., Hayashi, Y.,
+            Takabayashi, K., Takatori, Y., Nakayama, A., Okabayashi, K., Kawakubo, H., Kitagawa, Y., & Yahagi, N.
+            (2024). Endoscopic ultrasound classification for prediction of endoscopic submucosal dissection
+            resectability: Predict classification. Endoscopy International Open, 12(09).
+            https://doi.org/10.1055/a-2387-1754
           </li>
           <li>
-            Meng, Y., Cao, C., Song, S., Li, Y., & Liu, S. (2015). Endoscopic band ligation versus endoscopic submucosal dissection and laparoscopic resection for small gastric stromal tumors. Surgical Endoscopy, 30(7), 2873–2878. https://doi.org/10.1007/s00464-015-4571-5 
+            Meng, Y., Cao, C., Song, S., Li, Y., & Liu, S. (2015). Endoscopic band ligation versus endoscopic submucosal
+            dissection and laparoscopic resection for small gastric stromal tumors. Surgical Endoscopy, 30(7),
+            2873–2878. https://doi.org/10.1007/s00464-015-4571-5
           </li>
           <li>
-            Mennigen, R., Laukoetter, M. G., & Senninger, N. (2014). Novel treatment options for perforations of the upper gastrointestinal tract: Endoscopic vacuum therapy and over-the-scope clips. World Journal of Gastroenterology, 20(24), 7767. https://doi.org/10.3748/wjg.v20.i24.7767 
+            Mennigen, R., Laukoetter, M. G., & Senninger, N. (2014). Novel treatment options for perforations of the
+            upper gastrointestinal tract: Endoscopic vacuum therapy and over-the-scope clips. World Journal of
+            Gastroenterology, 20(24), 7767. https://doi.org/10.3748/wjg.v20.i24.7767
           </li>
           <li>
-            Menon, L., & Buscaglia, J. M. (2013, December 11). Endoscopic approach to subepithelial lesions. Therapeutic Advances in Gastroenterology - Sage Journals. https://journals.sagepub.com/doi/10.1177/1756283X13513538 
+            Menon, L., & Buscaglia, J. M. (2013, December 11). Endoscopic approach to subepithelial lesions. Therapeutic
+            Advances in Gastroenterology - Sage Journals. https://journals.sagepub.com/doi/10.1177/1756283X13513538
           </li>
           <li>
-            Miniature Probe 12/20 MHz Ultrasound Probes (UM-2R-3/UM-3R-3). Olympus. (2024). https://medical.olympusamerica.com/products/probes/1220-mhz-ultrasound-probes-um-2r-3um-3r-3 
+            Miniature Probe 12/20 MHz Ultrasound Probes (UM-2R-3/UM-3R-3). Olympus. (2024).
+            https://medical.olympusamerica.com/products/probes/1220-mhz-ultrasound-probes-um-2r-3um-3r-3
           </li>
           <li>
-            OTSC® Anchor. Ovesco Endoscopy AG. (2024, January 22). https://ovesco.com/otsc-system/otsc-anchor/#/eluidde05b763_1_1 
+            OTSC® Anchor. Ovesco Endoscopy AG. (2024, January 22).
+            https://ovesco.com/otsc-system/otsc-anchor/#/eluidde05b763_1_1
           </li>
           <li>
-            OTSC® System set. Ovesco Endoscopy AG. (2023b, September 1). https://ovesco.com/otsc-system/otsc-system-set/#/eluidde05b763_1_1 
+            OTSC® System set. Ovesco Endoscopy AG. (2023b, September 1).
+            https://ovesco.com/otsc-system/otsc-system-set/#/eluidde05b763_1_1
           </li>
           <li>
-            Ovesco OTSC Clip. Synectics Medical Ltd. (2024). https://synecticsmedical.co.uk/product/ovesco-otsc-clip/ 
+            Ovesco OTSC Clip. Synectics Medical Ltd. (2024). https://synecticsmedical.co.uk/product/ovesco-otsc-clip/
           </li>
           <li>
-            Ovesco Traction Snare. Ovesco Endoscopy AG. (2023c, October 13). https://ovesco.com/resect/traction-snare/#/eluidde05b763_1_1 
+            Ovesco Traction Snare. Ovesco Endoscopy AG. (2023c, October 13).
+            https://ovesco.com/resect/traction-snare/#/eluidde05b763_1_1
           </li>
           <li>
-            Papanikolaou, I. S., Rösch, T., Kourikou, A., & Triantafyllou, K. (2011). Endoscopic ultrasonography for gastric submucosal lesions. World Journal of Gastrointestinal Endoscopy, 3(5), 86. https://doi.org/10.4253/wjge.v3.i5.86 
+            Papanikolaou, I. S., Rösch, T., Kourikou, A., & Triantafyllou, K. (2011). Endoscopic ultrasonography for
+            gastric submucosal lesions. World Journal of Gastrointestinal Endoscopy, 3(5), 86.
+            https://doi.org/10.4253/wjge.v3.i5.86
           </li>
           <li>
-            Perbtani, Y., Gupte, A., Draganov, P. V., Esnakula, A., & Yang, D. (2020). Endoscopic full-thickness resection of a stomach gastrointestinal stromal tumor using a dedicated full-thickness resection device. VideoGIE, 5(10), 470–472. https://doi.org/10.1016/j.vgie.2020.05.024 
+            Perbtani, Y., Gupte, A., Draganov, P. V., Esnakula, A., & Yang, D. (2020). Endoscopic full-thickness
+            resection of a stomach gastrointestinal stromal tumor using a dedicated full-thickness resection device.
+            VideoGIE, 5(10), 470–472. https://doi.org/10.1016/j.vgie.2020.05.024
           </li>
           <li>
-            Polkowski, M. (2005). Endoscopic ultrasound and endoscopic ultrasound-guided fine-needle biopsy for the diagnosis of malignant submucosal tumors. Endoscopy, 37(7), 635–645. https://doi.org/10.1055/s-2005-861422 
+            Polkowski, M. (2005). Endoscopic ultrasound and endoscopic ultrasound-guided fine-needle biopsy for the
+            diagnosis of malignant submucosal tumors. Endoscopy, 37(7), 635–645. https://doi.org/10.1055/s-2005-861422
           </li>
           <li>
-            Precedence Research. (2024, June 13). Endoscopy Devices Market Size to Worth USD 104.74 billion by 2033. Yahoo! Finance. https://finance.yahoo.com/news/endoscopy-devices-market-size-worth-155000563.html 
+            Precedence Research. (2024, June 13). Endoscopy Devices Market Size to Worth USD 104.74 billion by 2033.
+            Yahoo! Finance. https://finance.yahoo.com/news/endoscopy-devices-market-size-worth-155000563.html
           </li>
           <li>
-            Su, Q., Peng, J., Chen, X., Xiao, Z., Liu, R., & Wang, F. (2021). Role of endoscopic ultrasonography for differential diagnosis of upper gastrointestinal submucosal lesions. BMC Gastroenterology, 21(1). https://doi.org/10.1186/s12876-021-01945-9 
+            Su, Q., Peng, J., Chen, X., Xiao, Z., Liu, R., & Wang, F. (2021). Role of endoscopic ultrasonography for
+            differential diagnosis of upper gastrointestinal submucosal lesions. BMC Gastroenterology, 21(1).
+            https://doi.org/10.1186/s12876-021-01945-9
           </li>
           <li>
-            UM-DP12-25R Helical Miniature Probe. Olympus Ultrasonic Miniature Probes. (2024). https://www.olympus-mea.com/medical/en/Products-and-Solutions/Products/Product/UM-DP12-25R.html 
+            UM-DP12-25R Helical Miniature Probe. Olympus Ultrasonic Miniature Probes. (2024).
+            https://www.olympus-mea.com/medical/en/Products-and-Solutions/Products/Product/UM-DP12-25R.html
           </li>
           <li>
-            Ward, M. (2017, October 16). Devices@FDA Apollo Endosurgery. accessdata.fda.gov. https://www.accessdata.fda.gov/cdrh_docs/pdf17/K171886.pdf 
+            Ward, M. (2017, October 16). Devices@FDA Apollo Endosurgery. accessdata.fda.gov.
+            https://www.accessdata.fda.gov/cdrh_docs/pdf17/K171886.pdf
           </li>
           <li>
-            Wei, M. T., Ahn, J. Y., & Friedland, S. (2021). Over-the-scope clip in the treatment of gastrointestinal leaks and perforations. Clinical Endoscopy, 54(6), 798–804. https://doi.org/10.5946/ce.2021.250 
+            Wei, M. T., Ahn, J. Y., & Friedland, S. (2021). Over-the-scope clip in the treatment of gastrointestinal
+            leaks and perforations. Clinical Endoscopy, 54(6), 798–804. https://doi.org/10.5946/ce.2021.250
           </li>
           <li>
-            X-tackTM. www.bostonscientific.com. (2024). https://www.bostonscientific.com/en-US/products/endoscopic-closure/x-tack.html 
+            X-tackTM. www.bostonscientific.com. (2024).
+            https://www.bostonscientific.com/en-US/products/endoscopic-closure/x-tack.html
           </li>
           <li>
-            Yamamoto, H. (2005). Double-Balloon Endoscopy. Clinical Gastroenterology and Hepatology, 3(7). https://doi.org/10.1016/s1542-3565(05)00253-3 
+            Yamamoto, H. (2005). Double-Balloon Endoscopy. Clinical Gastroenterology and Hepatology, 3(7).
+            https://doi.org/10.1016/s1542-3565(05)00253-3
           </li>
           <li>
-            Yu, C., Liao, G., Fan, C., Yu, J., Nie, X., Yang, S., & Bai, J. (2017). Long-term outcomes of endoscopic resection of Gastric Gists. Surgical Endoscopy, 31(11), 4799–4804. https://doi.org/10.1007/s00464-017-5557-2 
+            Yu, C., Liao, G., Fan, C., Yu, J., Nie, X., Yang, S., & Bai, J. (2017). Long-term outcomes of endoscopic
+            resection of Gastric Gists. Surgical Endoscopy, 31(11), 4799–4804. https://doi.org/10.1007/s00464-017-5557-2
           </li>
         </ul>
       </div>
