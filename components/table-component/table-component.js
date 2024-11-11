@@ -3,10 +3,15 @@ new gridjs.Grid({
   data: [
     ["SGH", "Singapore General Hospital"],
     ["CGH", "Changi General Hospital"],
+    ["GIST", "Gastrointestinal stromal tumour"],
+    ["EUS", "Diagnostic Endoscopic Ultrasonography"],
+    ["EUS-FNA", "EUS-Guided Fine Needle Aspiration"],
     ["ESD", "Endoscopic Submucosal Dissection"],
     ["EMR", "Endoscopic Mucosal Resection"],
     ["ESR", "Endoscopic Submucosal Resection"],
     ["EFTR", "Endoscopic Full Thickness Resection"],
+    ["ESG", "Endoscopic Sleeve Gastroplasty"],
+    ["ERCP", "Endoscopic Retrograde Cholangiopancreatography"],
     ["FTRD", "Full Thickness Resection Device"],
   ],
 }).render(document.getElementById("table-1"));
