@@ -31,6 +31,28 @@
   <script src="./components/table-component/table-component.js"></script>
 
   <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .video {
+      flex: 1;
+      min-width: 300px;
+      /* Adjust this value based on your needs */
+      margin: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 16 / 9;
+      /* Maintain 16:9 aspect ratio */
+    }
+  </style>
 </head>
 
 <body>
@@ -847,390 +869,405 @@
             <image-component tag="image" source="assets/prototyping/sim-emr.png"
               subtitle="Figure 25: Attempting Simulated Endoscopic Mucosal Resection"></image-component>
 
-            <iframe src="https://drive.google.com/file/d/1XPra8yXxw0vKVz5zlPB65HQxpJpYqWr5/preview" width="640"
-              height="480" allow="autoplay"></iframe>
-
-            <iframe src="https://drive.google.com/file/d/10AaJ0_k3VJtaCpeF5Jrf979LRVPP0PRL/preview" width="640"
-              height="480" allow="autoplay"></iframe>
-
-            <p>
-              From this prototype, we learnt that:
-            </p>
-
-            <image-component tag="image" source="assets/prototyping/emr-qns-ans.png" subtitle=""></image-component>
+            <div class="container">
+              <div class="video">
+                <iframe src="https://drive.google.com/file/d/1XPra8yXxw0vKVz5zlPB65HQxpJpYqWr5/preview" width="640"
+                  height="480" allow="autoplay"></iframe>
+              </div>
+              <div class="video"></div>
+              <iframe src="https://drive.google.com/file/d/10AaJ0_k3VJtaCpeF5Jrf979LRVPP0PRL/preview" width="640"
+                height="480" allow="autoplay"></iframe>
+            </div>
           </div>
 
-          <div id="sub-section-12-header-4">
-            <h3>10.4 Prototype 3: Endoscopic Full Thickness Resection Model</h3>
-            <p>
-              After the EMR test, we used a transparent rubber hose and other metal parts from drain cleaning tools to
-              model the Cookie Cutter attachment and used it to test Endoscopic Full Thickness Resection (EFTR) using
-              the Micro-Tech Hemostasis Clip as a forceps.
-            </p>
+          <p>
+            From this prototype, we learnt that:
+          </p>
 
-            <image-component tag="image" source="assets/prototyping/eftr-model.png"
-              subtitle="Figure 26: Third 3D Printed Endoscope Model for EFTR"></image-component>
-            <p>
-              We simulated the EFTR procedure using our cookie cutter attachment to test whether the procedure worked
-              well to complete the full thickness resection. I asked my friend who is a nursing student to help me to
-              deploy the forceps because attempting this procedure requires multiple personnel.
-            </p>
-
-            <image-component tag="image" source="assets/prototyping/eftr-qns.png" subtitle=""></image-component>
-
-            <image-component tag="image" source="assets/prototyping/sim-eftr.png"
-              subtitle="Figure 27: Attempting Simulated Endoscopic Full Thickness Resection"></image-component>
-
-            <iframe src="https://drive.google.com/file/d/1601QL_RwfQ9wtiXLu5ZKJgblramOSk_q/preview" width="640"
-              height="480" allow="autoplay"></iframe>
-
-            <iframe src="https://drive.google.com/file/d/13kUVljn_94QaZjux-MgGB_UBIZpXFDnn/preview" width="640"
-              height="480" allow="autoplay"></iframe>
-
-            <p>
-              From this prototype, we learnt that:
-            </p>
-
-            <image-component tag="image" source="assets/prototyping/eftr-qns-ans.png" subtitle=""></image-component>
-          </div>
-
-          <div id="sub-section-12-header-5">
-            <h3>10.5 Prototype 3: Testing with Clinical Mentor - Dr. Ravi</h3>
-            <p>
-              When we met with our clinical mentor – Dr. Ravi to test Prototype 3 further, he modified it with a large
-              snare and a forceps attachment.
-            </p>
-
-            <image-component tag="image" source="assets/prototyping/dr-ravi-model.png"
-              subtitle="Figure 28: Clinical Mentor Modified Third 3D Printed Endoscope Model for EFTR"></image-component>
-
-            <image-component tag="image" source="assets/prototyping/dr-ravi-sim-eftr.png"
-              subtitle="Figure 29: Attempting Simulated Endoscopic Full Thickness Resection"></image-component>
-
-            <iframe src="https://drive.google.com/file/d/18DYWAK_HrfVnsyHmP-KVfNTKVkGSEU7c/preview" width="640"
-              height="480" allow="autoplay"></iframe>
-
-            <iframe src="https://drive.google.com/file/d/1-s-i8NHhstKQ9VQ6_-k1WVu29OZM9iCj/preview" width="640"
-              height="480" allow="autoplay"></iframe>
-
-            <p>
-              We obtained feedback from our clinical and industry mentors – Dr. Ravi and Mr. Peter Cheng respectively
-              and gained the following insights.
-            </p>
-
-            <image-component tag="image" source="assets/prototyping/dr-ravi-eftr-qns-ans-1.png"
-              subtitle=""></image-component>
-            <image-component tag="image" source="assets/prototyping/dr-ravi-eftr-qns-ans-2.png"
-              subtitle=""></image-component>
-          </div>
+          <image-component tag="image" source="assets/prototyping/emr-qns-ans.png" subtitle=""></image-component>
         </div>
 
-        <sl-divider></sl-divider>
+        <div id="sub-section-12-header-4">
+          <h3>10.4 Prototype 3: Endoscopic Full Thickness Resection Model</h3>
+          <p>
+            After the EMR test, we used a transparent rubber hose and other metal parts from drain cleaning tools to
+            model the Cookie Cutter attachment and used it to test Endoscopic Full Thickness Resection (EFTR) using
+            the Micro-Tech Hemostasis Clip as a forceps.
+          </p>
 
-        <div id="section-header-13">
-          <h2>11. Future Work</h2>
+          <image-component tag="image" source="assets/prototyping/eftr-model.png"
+            subtitle="Figure 26: Third 3D Printed Endoscope Model for EFTR"></image-component>
           <p>
-            Our projected timeline for future work is shown in Figure 18. We have identified the problem and the needs
-            of the clinicians, nurses and patients at the Ambulatory Endoscopy Centre (AEC) at SGH. We have been working
-            closely with our clinical mentor, Dr. Ravishankar Asokkumar and our industry mentor, Mr. Peter Cheng in our
-            concept development. Following which, we have also developed our first prototype and will proceed on to
-            further testing. Moving forward, we will work with our mentors to test our prototype further and conduct
-            preliminary data collection.
+            We simulated the EFTR procedure using our cookie cutter attachment to test whether the procedure worked
+            well to complete the full thickness resection. I asked my friend who is a nursing student to help me to
+            deploy the forceps because attempting this procedure requires multiple personnel.
           </p>
+
+          <image-component tag="image" source="assets/prototyping/eftr-qns.png" subtitle=""></image-component>
+
+          <image-component tag="image" source="assets/prototyping/sim-eftr.png"
+            subtitle="Figure 27: Attempting Simulated Endoscopic Full Thickness Resection"></image-component>
+
+          <div class="container">
+            <div class="video">
+              <iframe src="https://drive.google.com/file/d/1601QL_RwfQ9wtiXLu5ZKJgblramOSk_q/preview" width="640"
+                height="480" allow="autoplay"></iframe>
+            </div>
+            <div class="video">
+              <iframe src="https://drive.google.com/file/d/13kUVljn_94QaZjux-MgGB_UBIZpXFDnn/preview" width="640"
+                height="480" allow="autoplay"></iframe>
+            </div>
+          </div>
+
           <p>
-            We hope to build a complete, physical device showcasing the functionality of our full thickness
-            resection device and collect data using a stomach analogue to demonstrate that it is just as safe and
-            effective as surgical wedge resection, while being faster than ESD. We also hope to show that our device can
-            securely capture the subepithelial lesion and ensure complete resection while reducing the risk of
-            perforation and retaining resection efficiency and validate that our device has indeed improved on
-            challenges faced by endoscopists when using the FTRD® System.
+            From this prototype, we learnt that:
           </p>
-          <p>
-            First, we need to design a new clip with a new clip release mechanism. Dr. Ravi does not like the OTSC clip
-            and wants a circular closing clip which can clip and cut consecutively in a single mechanism immediately
-            after determining enough tissue has been pulled in, because the stomach is constantly moving.
-          </p>
-          <p>
-            Second, we need to figure out the cookie cutter deployment mechanism. We are considering using a pneumatic
-            or hydraulic system, using either air or saline to deploy the cookie cutter to secure the lesion boundary.
-          </p>
-          <p>
-            Third, we need to ensure that the cap can form a vacuum seal around the lesion. We intend to prototype the
-            suction force using a syringe to generate the vacuum.
-          </p>
-          <p>
-            Fourth, we need to validate the effectiveness of the miniature ultrasound probe to obtain accurate visual
-            feedback that the lesion is fully captured under the mucosal surface.
-          </p>
-          <p>
-            Last, we need to make a better stomach analogue using silicone or a pig stomach to model the multiple layers
-            (mucosa, submucosa, muscularis propria and serosa), the texture and flexibility of the stomach wall. This
-            will allow us to collect sufficient data to validate the effectiveness of our procedure and device.
-          </p>
-          <image-component tag="image" source="assets/projected-timeline.png"
-            subtitle="Figure 30: Projected Timeline for Academic Year 24/25 Semester 2"></image-component>
-          <br>
-          <image-component tag="image" source="assets/gantt-chart.png"
-            subtitle="Figure 31. Gantt Chart for Academic Year 24/25 Semester 2"></image-component>
+
+          <image-component tag="image" source="assets/prototyping/eftr-qns-ans.png" subtitle=""></image-component>
         </div>
-      </div>
 
-      <!-- This is an example of how you can use the references component to create references -->
-      <div id="references" class="references">
-        <sl-divider></sl-divider>
-        <h2>References</h2>
-        <ul>
-          <li>
-            Aepli, P., Criblez, D., Baumeler, S., Borovicka, J., & Frei, R. (2017). Endoscopic full thickness resection
-            (EFTR) of colorectal neoplasms with the full thickness resection device (FTRD): Clinical experience from two
-            tertiary referral centers in Switzerland. United European Gastroenterology Journal, 6(3), 463–470.
-            https://doi.org/10.1177/2050640617728001
-          </li>
-          <li>
-            Arévalo, J. (2023, September 8). I.1.4. Balloon Enteroscopy. ENDI (GETECCU).
-            https://endi.geteccu.org/i-1-4-balloon-enteroscopy/
-          </li>
-          <li>
-            Aslanian, H. R., Sethi, A., Bhutani, M. S., Goodman, A. J., Krishnan, K., Lichtenstein, D. R., Melson, J.,
-            Navaneethan, U., Pannala, R., Parsi, M. A., Schulman, A. R., Sullivan, S. A., Thosani, N., Trikudanathan,
-            G., Trindade, A. J., Watson, R. R., & Maple, J. T. (2019). ASGE guideline for endoscopic full-thickness
-            resection and submucosal tunnel endoscopic resection. VideoGIE, 4(8), 343–350.
-            https://doi.org/10.1016/j.vgie.2019.03.010
-          </li>
-          <li>
-            AWC®. Ovesco Endoscopy AG. (2022a, December 12). https://ovesco.com/resect/awc/
-          </li>
-          <li>
-            Cai, M., Martin Carreras‐Presas, F., & Zhou, P. (2018). Endoscopic full‐thickness resection for
-            gastrointestinal submucosal tumors. Digestive Endoscopy, 30(S1), 17–24. https://doi.org/10.1111/den.13003
-          </li>
-          <li>
-            Cancer Information - Stomach Cancer (Gastric Cancer). National University Cancer Institute, Singapore.
-            (2022, March 15).
-            https://www.ncis.com.sg/Cancer-Information/About-Cancer/Pages/Stomach-Cancer-Gastric-Cancer.aspx
-          </li>
-          <li>
-            Dohi, O., Yoshida, N., Naito, Y., Yoshida, T., Ishida, T., Azuma, Y., Kitae, H., Matsumura, S., Takayama,
-            S., Ogita, K., Mizuno, N., Nakano, T., Majima, A., Hirose, R., Inoue, K., Kamada, K., Uchiyama, K., Takagi,
-            T., Ishikawa, T., … Itoh, Y. (2020). Efficacy and safety of endoscopic submucosal dissection using a
-            scissors‐type knife with prophylactic over‐the‐scope clip closure for superficial non‐ampullary duodenal
-            epithelial tumors. Digestive Endoscopy, 32(6), 904–913. https://doi.org/10.1111/den.13618
-          </li>
-          <li>
-            Endoscopic Submucosal Dissection (ESD): Gleneagles Hospital. Gleneagles Hospital. (2024).
-            https://www.gleneagles.com.sg/tests-treatments/endoscopic-submucosal-dissection
-          </li>
-          <li>
-            FTRD® Grasper. Ovesco Endoscopy AG. (2022b, December 12). https://ovesco.com/ftrd-system/ftrd-grasper/
-          </li>
-          <li>
-            Gastroduodenal FTRD®. Ovesco Endoscopy AG. (2023a, March 30).
-            https://ovesco.com/ftrd-system/gastroduodenal-ftrd/#/eluidde05b763_1_1
-          </li>
-          <li>
-            Global Market Insights. (2023, August). Endoscopy Market - By Product, By End-use & Forecast, 2023 – 2032 .
-            Global Market Insights Inc. https://www.gminsights.com/industry-analysis/endoscopy-market
-          </li>
-          <li>
-            Guardus overtube 25CM 9.8-11.6mm scope OD [3/BX]. GUARDUS OVERTUBE 25CM 9.8-11.6MM SCOPE OD [3/BX]
-            BX00711147 | Shop STERIS. (2024).
-            https://shop.steris.com/en/us/products/guardus-overtube-esophageal-bx00711147
-          </li>
-          <li>
-            Guardus® overtube - gastric. Duomed. (2024). https://www.duomed.com/en-DK/overtube/guardusr-overtube-gastric
-          </li>
-          <li>
-            Guo, Y., Jing, X., Zhang, J., Ding, X., Li, X., Mao, T., & Tian, Z. (2019). Endoscopic removal of
-            gastrointestinal stromal tumors in the stomach: A single-center experience. Gastroenterology Research and
-            Practice, 2019, 1–9. https://doi.org/10.1155/2019/3087298
-          </li>
-          <li>
-            Healthcare Purchasing News. (2022, October 26). The Growing Demand for Endoscopy.
-            https://www.hpnonline.com/surgical-critical-care/article/21284716/the-growing-demand-for-endoscopy ,
-          </li>
-          <li>
-            Hot Snares. Micro-Tech Endoscopy. (2024, July 9).
-            https://mtendoscopy.com/products/gastroenterology/resection-retrieval/polypectomy/hot-snares/
-          </li>
-          <li>
-            Humphris, J. L., & Jones, D. B. (2008). Subepithelial mass lesions in the upper gastrointestinal tract.
-            Journal of Gastroenterology and Hepatology, 23(4), 556–566. https://doi.org/10.1111/j.1440-1746.2007.05232.x
-          </li>
-          <li>
-            Ishikawa, K., Inomata, M., Etoh, T., Shiromizu, A., Shiraishi, N., Arita, T., & Kitano, S. (2006). Long-term
-            outcome of laparoscopic wedge resection for gastric submucosal tumor compared with open wedge resection.
-            Surgical Laparoscopy, Endoscopy &amp; Percutaneous Techniques, 16(2), 82–85.
-            https://doi.org/10.1097/00129689-200604000-00005
-          </li>
-          <li>
-            Joensuu, H., Hohenberger, P., & Corless, C. L. (2013). Gastrointestinal stromal tumour. The Lancet,
-            382(9896), 973–983. https://doi.org/10.1016/s0140-6736(13)60106-3
-          </li>
-          <li>
-            Kaan, H. L., & Ho, K. Y. (2020). Endoscopic Full Thickness Resection for Gastrointestinal Tumors -
-            Challenges and Solutions. Clinical Endoscopy, 53(5), 541–549. https://doi.org/10.5946/ce.2019.161
-          </li>
-          <li>
-            Kirschniak, A., Kratt, T., Stüker, D., Braun, A., Schurr, M.-O., & Königsrainer, A. (2007). A new endoscopic
-            over-the-scope clip system for treatment of lesions and bleeding in the GI tract: First clinical
-            experiences. Gastrointestinal Endoscopy, 66(1), 162–167. https://doi.org/10.1016/j.gie.2007.01.034
-          </li>
-          <li>
-            Lee, H. L. (2023, April 11). PM Lee Hsien Loong at the “Singapore Ageing: Issues and Challenges Ahead” book
-            launch. Prime Minister’s Office Singapore.
-            https://www.pmo.gov.sg/Newsroom/PM-Lee-Hsien-Loong-at-the-Singapore-Ageing-Issues-and-Challenges-Ahead-Book-Launch
-          </li>
-          <li>
-            Madhavan, A., Phillips, A. W., Donohoe, C. L., Willows, R. J., Immanuel, A., Verril, M., & Griffin, S. M.
-            (2018). Surgical management of gastric gastrointestinal stromal tumours: Comparison of outcomes for local
-            and radical resection. Gastroenterology Research and Practice, 2018, 1–7.
-            https://doi.org/10.1155/2018/2140253
-          </li>
-          <li>
-            Matsuura, N., Kato, M., Iwata, K., Miyazaki, K., Masunaga, T., Kubosawa, Y., Mizutani, M., Hayashi, Y.,
-            Takabayashi, K., Takatori, Y., Nakayama, A., Okabayashi, K., Kawakubo, H., Kitagawa, Y., & Yahagi, N.
-            (2024). Endoscopic ultrasound classification for prediction of endoscopic submucosal dissection
-            resectability: Predict classification. Endoscopy International Open, 12(09).
-            https://doi.org/10.1055/a-2387-1754
-          </li>
-          <li>
-            Meng, Y., Cao, C., Song, S., Li, Y., & Liu, S. (2015). Endoscopic band ligation versus endoscopic submucosal
-            dissection and laparoscopic resection for small gastric stromal tumors. Surgical Endoscopy, 30(7),
-            2873–2878. https://doi.org/10.1007/s00464-015-4571-5
-          </li>
-          <li>
-            Mennigen, R., Laukoetter, M. G., & Senninger, N. (2014). Novel treatment options for perforations of the
-            upper gastrointestinal tract: Endoscopic vacuum therapy and over-the-scope clips. World Journal of
-            Gastroenterology, 20(24), 7767. https://doi.org/10.3748/wjg.v20.i24.7767
-          </li>
-          <li>
-            Menon, L., & Buscaglia, J. M. (2013, December 11). Endoscopic approach to subepithelial lesions. Therapeutic
-            Advances in Gastroenterology - Sage Journals. https://journals.sagepub.com/doi/10.1177/1756283X13513538
-          </li>
-          <li>
-            Miniature Probe 12/20 MHz Ultrasound Probes (UM-2R-3/UM-3R-3). Olympus. (2024).
-            https://medical.olympusamerica.com/products/probes/1220-mhz-ultrasound-probes-um-2r-3um-3r-3
-          </li>
-          <li>
-            OTSC® Anchor. Ovesco Endoscopy AG. (2024, January 22).
-            https://ovesco.com/otsc-system/otsc-anchor/#/eluidde05b763_1_1
-          </li>
-          <li>
-            OTSC® System set. Ovesco Endoscopy AG. (2023b, September 1).
-            https://ovesco.com/otsc-system/otsc-system-set/#/eluidde05b763_1_1
-          </li>
-          <li>
-            Ovesco OTSC Clip. Synectics Medical Ltd. (2024). https://synecticsmedical.co.uk/product/ovesco-otsc-clip/
-          </li>
-          <li>
-            Ovesco Traction Snare. Ovesco Endoscopy AG. (2023c, October 13).
-            https://ovesco.com/resect/traction-snare/#/eluidde05b763_1_1
-          </li>
-          <li>
-            Papanikolaou, I. S., Rösch, T., Kourikou, A., & Triantafyllou, K. (2011). Endoscopic ultrasonography for
-            gastric submucosal lesions. World Journal of Gastrointestinal Endoscopy, 3(5), 86.
-            https://doi.org/10.4253/wjge.v3.i5.86
-          </li>
-          <li>
-            Perbtani, Y., Gupte, A., Draganov, P. V., Esnakula, A., & Yang, D. (2020). Endoscopic full-thickness
-            resection of a stomach gastrointestinal stromal tumor using a dedicated full-thickness resection device.
-            VideoGIE, 5(10), 470–472. https://doi.org/10.1016/j.vgie.2020.05.024
-          </li>
-          <li>
-            Polkowski, M. (2005). Endoscopic ultrasound and endoscopic ultrasound-guided fine-needle biopsy for the
-            diagnosis of malignant submucosal tumors. Endoscopy, 37(7), 635–645. https://doi.org/10.1055/s-2005-861422
-          </li>
-          <li>
-            Precedence Research. (2024, June 13). Endoscopy Devices Market Size to Worth USD 104.74 billion by 2033.
-            Yahoo! Finance. https://finance.yahoo.com/news/endoscopy-devices-market-size-worth-155000563.html
-          </li>
-          <li>
-            Su, Q., Peng, J., Chen, X., Xiao, Z., Liu, R., & Wang, F. (2021). Role of endoscopic ultrasonography for
-            differential diagnosis of upper gastrointestinal submucosal lesions. BMC Gastroenterology, 21(1).
-            https://doi.org/10.1186/s12876-021-01945-9
-          </li>
-          <li>
-            UM-DP12-25R Helical Miniature Probe. Olympus Ultrasonic Miniature Probes. (2024).
-            https://www.olympus-mea.com/medical/en/Products-and-Solutions/Products/Product/UM-DP12-25R.html
-          </li>
-          <li>
-            Ward, M. (2017, October 16). Devices@FDA Apollo Endosurgery. accessdata.fda.gov.
-            https://www.accessdata.fda.gov/cdrh_docs/pdf17/K171886.pdf
-          </li>
-          <li>
-            Wei, M. T., Ahn, J. Y., & Friedland, S. (2021). Over-the-scope clip in the treatment of gastrointestinal
-            leaks and perforations. Clinical Endoscopy, 54(6), 798–804. https://doi.org/10.5946/ce.2021.250
-          </li>
-          <li>
-            X-tackTM. www.bostonscientific.com. (2024).
-            https://www.bostonscientific.com/en-US/products/endoscopic-closure/x-tack.html
-          </li>
-          <li>
-            Yamamoto, H. (2005). Double-Balloon Endoscopy. Clinical Gastroenterology and Hepatology, 3(7).
-            https://doi.org/10.1016/s1542-3565(05)00253-3
-          </li>
-          <li>
-            Yu, C., Liao, G., Fan, C., Yu, J., Nie, X., Yang, S., & Bai, J. (2017). Long-term outcomes of endoscopic
-            resection of Gastric Gists. Surgical Endoscopy, 31(11), 4799–4804. https://doi.org/10.1007/s00464-017-5557-2
-          </li>
-        </ul>
+        <div id="sub-section-12-header-5">
+          <h3>10.5 Prototype 3: Testing with Clinical Mentor - Dr. Ravi</h3>
+          <p>
+            When we met with our clinical mentor – Dr. Ravi to test Prototype 3 further, he modified it with a large
+            snare and a forceps attachment.
+          </p>
+
+          <image-component tag="image" source="assets/prototyping/dr-ravi-model.png"
+            subtitle="Figure 28: Clinical Mentor Modified Third 3D Printed Endoscope Model for EFTR"></image-component>
+
+          <image-component tag="image" source="assets/prototyping/dr-ravi-sim-eftr.png"
+            subtitle="Figure 29: Attempting Simulated Endoscopic Full Thickness Resection"></image-component>
+
+          <div class="container">
+            <div class="video">
+              <iframe src="https://drive.google.com/file/d/18DYWAK_HrfVnsyHmP-KVfNTKVkGSEU7c/preview" width="640"
+                height="480" allow="autoplay"></iframe>
+            </div>
+            <div class="video">
+              <iframe src="https://drive.google.com/file/d/1-s-i8NHhstKQ9VQ6_-k1WVu29OZM9iCj/preview" width="640"
+                height="480" allow="autoplay"></iframe>
+            </div>
+          </div>
+
+          <p>
+            We obtained feedback from our clinical and industry mentors – Dr. Ravi and Mr. Peter Cheng respectively
+            and gained the following insights.
+          </p>
+
+          <image-component tag="image" source="assets/prototyping/dr-ravi-eftr-qns-ans-1.png"
+            subtitle=""></image-component>
+          <image-component tag="image" source="assets/prototyping/dr-ravi-eftr-qns-ans-2.png"
+            subtitle=""></image-component>
+        </div>
       </div>
 
       <sl-divider></sl-divider>
 
-      <div>
-        <div id="appendix">
-          <h2>Appendix</h2>
-        </div>
+      <div id="section-header-13">
+        <h2>11. Future Work</h2>
+        <p>
+          Our projected timeline for future work is shown in Figure 18. We have identified the problem and the needs
+          of the clinicians, nurses and patients at the Ambulatory Endoscopy Centre (AEC) at SGH. We have been working
+          closely with our clinical mentor, Dr. Ravishankar Asokkumar and our industry mentor, Mr. Peter Cheng in our
+          concept development. Following which, we have also developed our first prototype and will proceed on to
+          further testing. Moving forward, we will work with our mentors to test our prototype further and conduct
+          preliminary data collection.
+        </p>
+        <p>
+          We hope to build a complete, physical device showcasing the functionality of our full thickness
+          resection device and collect data using a stomach analogue to demonstrate that it is just as safe and
+          effective as surgical wedge resection, while being faster than ESD. We also hope to show that our device can
+          securely capture the subepithelial lesion and ensure complete resection while reducing the risk of
+          perforation and retaining resection efficiency and validate that our device has indeed improved on
+          challenges faced by endoscopists when using the FTRD® System.
+        </p>
+        <p>
+          First, we need to design a new clip with a new clip release mechanism. Dr. Ravi does not like the OTSC clip
+          and wants a circular closing clip which can clip and cut consecutively in a single mechanism immediately
+          after determining enough tissue has been pulled in, because the stomach is constantly moving.
+        </p>
+        <p>
+          Second, we need to figure out the cookie cutter deployment mechanism. We are considering using a pneumatic
+          or hydraulic system, using either air or saline to deploy the cookie cutter to secure the lesion boundary.
+        </p>
+        <p>
+          Third, we need to ensure that the cap can form a vacuum seal around the lesion. We intend to prototype the
+          suction force using a syringe to generate the vacuum.
+        </p>
+        <p>
+          Fourth, we need to validate the effectiveness of the miniature ultrasound probe to obtain accurate visual
+          feedback that the lesion is fully captured under the mucosal surface.
+        </p>
+        <p>
+          Last, we need to make a better stomach analogue using silicone or a pig stomach to model the multiple layers
+          (mucosa, submucosa, muscularis propria and serosa), the texture and flexibility of the stomach wall. This
+          will allow us to collect sufficient data to validate the effectiveness of our procedure and device.
+        </p>
+        <image-component tag="image" source="assets/projected-timeline.png"
+          subtitle="Figure 30: Projected Timeline for Academic Year 24/25 Semester 2"></image-component>
+        <br>
+        <image-component tag="image" source="assets/gantt-chart.png"
+          subtitle="Figure 31. Gantt Chart for Academic Year 24/25 Semester 2"></image-component>
+      </div>
+    </div>
 
-        <div id="appendix-a">
-          <!-- embed youtube video -->
-          <h3>Appendix A. Endoscopic Full Thickness Resection of Transverse Colon Carcinoma</h3>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/OG6uwWlItuU?si=IXsA_0H5ubHrTujB"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+    <!-- This is an example of how you can use the references component to create references -->
+    <div id="references" class="references">
+      <sl-divider></sl-divider>
+      <h2>References</h2>
+      <ul>
+        <li>
+          Aepli, P., Criblez, D., Baumeler, S., Borovicka, J., & Frei, R. (2017). Endoscopic full thickness resection
+          (EFTR) of colorectal neoplasms with the full thickness resection device (FTRD): Clinical experience from two
+          tertiary referral centers in Switzerland. United European Gastroenterology Journal, 6(3), 463–470.
+          https://doi.org/10.1177/2050640617728001
+        </li>
+        <li>
+          Arévalo, J. (2023, September 8). I.1.4. Balloon Enteroscopy. ENDI (GETECCU).
+          https://endi.geteccu.org/i-1-4-balloon-enteroscopy/
+        </li>
+        <li>
+          Aslanian, H. R., Sethi, A., Bhutani, M. S., Goodman, A. J., Krishnan, K., Lichtenstein, D. R., Melson, J.,
+          Navaneethan, U., Pannala, R., Parsi, M. A., Schulman, A. R., Sullivan, S. A., Thosani, N., Trikudanathan,
+          G., Trindade, A. J., Watson, R. R., & Maple, J. T. (2019). ASGE guideline for endoscopic full-thickness
+          resection and submucosal tunnel endoscopic resection. VideoGIE, 4(8), 343–350.
+          https://doi.org/10.1016/j.vgie.2019.03.010
+        </li>
+        <li>
+          AWC®. Ovesco Endoscopy AG. (2022a, December 12). https://ovesco.com/resect/awc/
+        </li>
+        <li>
+          Cai, M., Martin Carreras‐Presas, F., & Zhou, P. (2018). Endoscopic full‐thickness resection for
+          gastrointestinal submucosal tumors. Digestive Endoscopy, 30(S1), 17–24. https://doi.org/10.1111/den.13003
+        </li>
+        <li>
+          Cancer Information - Stomach Cancer (Gastric Cancer). National University Cancer Institute, Singapore.
+          (2022, March 15).
+          https://www.ncis.com.sg/Cancer-Information/About-Cancer/Pages/Stomach-Cancer-Gastric-Cancer.aspx
+        </li>
+        <li>
+          Dohi, O., Yoshida, N., Naito, Y., Yoshida, T., Ishida, T., Azuma, Y., Kitae, H., Matsumura, S., Takayama,
+          S., Ogita, K., Mizuno, N., Nakano, T., Majima, A., Hirose, R., Inoue, K., Kamada, K., Uchiyama, K., Takagi,
+          T., Ishikawa, T., … Itoh, Y. (2020). Efficacy and safety of endoscopic submucosal dissection using a
+          scissors‐type knife with prophylactic over‐the‐scope clip closure for superficial non‐ampullary duodenal
+          epithelial tumors. Digestive Endoscopy, 32(6), 904–913. https://doi.org/10.1111/den.13618
+        </li>
+        <li>
+          Endoscopic Submucosal Dissection (ESD): Gleneagles Hospital. Gleneagles Hospital. (2024).
+          https://www.gleneagles.com.sg/tests-treatments/endoscopic-submucosal-dissection
+        </li>
+        <li>
+          FTRD® Grasper. Ovesco Endoscopy AG. (2022b, December 12). https://ovesco.com/ftrd-system/ftrd-grasper/
+        </li>
+        <li>
+          Gastroduodenal FTRD®. Ovesco Endoscopy AG. (2023a, March 30).
+          https://ovesco.com/ftrd-system/gastroduodenal-ftrd/#/eluidde05b763_1_1
+        </li>
+        <li>
+          Global Market Insights. (2023, August). Endoscopy Market - By Product, By End-use & Forecast, 2023 – 2032 .
+          Global Market Insights Inc. https://www.gminsights.com/industry-analysis/endoscopy-market
+        </li>
+        <li>
+          Guardus overtube 25CM 9.8-11.6mm scope OD [3/BX]. GUARDUS OVERTUBE 25CM 9.8-11.6MM SCOPE OD [3/BX]
+          BX00711147 | Shop STERIS. (2024).
+          https://shop.steris.com/en/us/products/guardus-overtube-esophageal-bx00711147
+        </li>
+        <li>
+          Guardus® overtube - gastric. Duomed. (2024). https://www.duomed.com/en-DK/overtube/guardusr-overtube-gastric
+        </li>
+        <li>
+          Guo, Y., Jing, X., Zhang, J., Ding, X., Li, X., Mao, T., & Tian, Z. (2019). Endoscopic removal of
+          gastrointestinal stromal tumors in the stomach: A single-center experience. Gastroenterology Research and
+          Practice, 2019, 1–9. https://doi.org/10.1155/2019/3087298
+        </li>
+        <li>
+          Healthcare Purchasing News. (2022, October 26). The Growing Demand for Endoscopy.
+          https://www.hpnonline.com/surgical-critical-care/article/21284716/the-growing-demand-for-endoscopy ,
+        </li>
+        <li>
+          Hot Snares. Micro-Tech Endoscopy. (2024, July 9).
+          https://mtendoscopy.com/products/gastroenterology/resection-retrieval/polypectomy/hot-snares/
+        </li>
+        <li>
+          Humphris, J. L., & Jones, D. B. (2008). Subepithelial mass lesions in the upper gastrointestinal tract.
+          Journal of Gastroenterology and Hepatology, 23(4), 556–566. https://doi.org/10.1111/j.1440-1746.2007.05232.x
+        </li>
+        <li>
+          Ishikawa, K., Inomata, M., Etoh, T., Shiromizu, A., Shiraishi, N., Arita, T., & Kitano, S. (2006). Long-term
+          outcome of laparoscopic wedge resection for gastric submucosal tumor compared with open wedge resection.
+          Surgical Laparoscopy, Endoscopy &amp; Percutaneous Techniques, 16(2), 82–85.
+          https://doi.org/10.1097/00129689-200604000-00005
+        </li>
+        <li>
+          Joensuu, H., Hohenberger, P., & Corless, C. L. (2013). Gastrointestinal stromal tumour. The Lancet,
+          382(9896), 973–983. https://doi.org/10.1016/s0140-6736(13)60106-3
+        </li>
+        <li>
+          Kaan, H. L., & Ho, K. Y. (2020). Endoscopic Full Thickness Resection for Gastrointestinal Tumors -
+          Challenges and Solutions. Clinical Endoscopy, 53(5), 541–549. https://doi.org/10.5946/ce.2019.161
+        </li>
+        <li>
+          Kirschniak, A., Kratt, T., Stüker, D., Braun, A., Schurr, M.-O., & Königsrainer, A. (2007). A new endoscopic
+          over-the-scope clip system for treatment of lesions and bleeding in the GI tract: First clinical
+          experiences. Gastrointestinal Endoscopy, 66(1), 162–167. https://doi.org/10.1016/j.gie.2007.01.034
+        </li>
+        <li>
+          Lee, H. L. (2023, April 11). PM Lee Hsien Loong at the “Singapore Ageing: Issues and Challenges Ahead” book
+          launch. Prime Minister’s Office Singapore.
+          https://www.pmo.gov.sg/Newsroom/PM-Lee-Hsien-Loong-at-the-Singapore-Ageing-Issues-and-Challenges-Ahead-Book-Launch
+        </li>
+        <li>
+          Madhavan, A., Phillips, A. W., Donohoe, C. L., Willows, R. J., Immanuel, A., Verril, M., & Griffin, S. M.
+          (2018). Surgical management of gastric gastrointestinal stromal tumours: Comparison of outcomes for local
+          and radical resection. Gastroenterology Research and Practice, 2018, 1–7.
+          https://doi.org/10.1155/2018/2140253
+        </li>
+        <li>
+          Matsuura, N., Kato, M., Iwata, K., Miyazaki, K., Masunaga, T., Kubosawa, Y., Mizutani, M., Hayashi, Y.,
+          Takabayashi, K., Takatori, Y., Nakayama, A., Okabayashi, K., Kawakubo, H., Kitagawa, Y., & Yahagi, N.
+          (2024). Endoscopic ultrasound classification for prediction of endoscopic submucosal dissection
+          resectability: Predict classification. Endoscopy International Open, 12(09).
+          https://doi.org/10.1055/a-2387-1754
+        </li>
+        <li>
+          Meng, Y., Cao, C., Song, S., Li, Y., & Liu, S. (2015). Endoscopic band ligation versus endoscopic submucosal
+          dissection and laparoscopic resection for small gastric stromal tumors. Surgical Endoscopy, 30(7),
+          2873–2878. https://doi.org/10.1007/s00464-015-4571-5
+        </li>
+        <li>
+          Mennigen, R., Laukoetter, M. G., & Senninger, N. (2014). Novel treatment options for perforations of the
+          upper gastrointestinal tract: Endoscopic vacuum therapy and over-the-scope clips. World Journal of
+          Gastroenterology, 20(24), 7767. https://doi.org/10.3748/wjg.v20.i24.7767
+        </li>
+        <li>
+          Menon, L., & Buscaglia, J. M. (2013, December 11). Endoscopic approach to subepithelial lesions. Therapeutic
+          Advances in Gastroenterology - Sage Journals. https://journals.sagepub.com/doi/10.1177/1756283X13513538
+        </li>
+        <li>
+          Miniature Probe 12/20 MHz Ultrasound Probes (UM-2R-3/UM-3R-3). Olympus. (2024).
+          https://medical.olympusamerica.com/products/probes/1220-mhz-ultrasound-probes-um-2r-3um-3r-3
+        </li>
+        <li>
+          OTSC® Anchor. Ovesco Endoscopy AG. (2024, January 22).
+          https://ovesco.com/otsc-system/otsc-anchor/#/eluidde05b763_1_1
+        </li>
+        <li>
+          OTSC® System set. Ovesco Endoscopy AG. (2023b, September 1).
+          https://ovesco.com/otsc-system/otsc-system-set/#/eluidde05b763_1_1
+        </li>
+        <li>
+          Ovesco OTSC Clip. Synectics Medical Ltd. (2024). https://synecticsmedical.co.uk/product/ovesco-otsc-clip/
+        </li>
+        <li>
+          Ovesco Traction Snare. Ovesco Endoscopy AG. (2023c, October 13).
+          https://ovesco.com/resect/traction-snare/#/eluidde05b763_1_1
+        </li>
+        <li>
+          Papanikolaou, I. S., Rösch, T., Kourikou, A., & Triantafyllou, K. (2011). Endoscopic ultrasonography for
+          gastric submucosal lesions. World Journal of Gastrointestinal Endoscopy, 3(5), 86.
+          https://doi.org/10.4253/wjge.v3.i5.86
+        </li>
+        <li>
+          Perbtani, Y., Gupte, A., Draganov, P. V., Esnakula, A., & Yang, D. (2020). Endoscopic full-thickness
+          resection of a stomach gastrointestinal stromal tumor using a dedicated full-thickness resection device.
+          VideoGIE, 5(10), 470–472. https://doi.org/10.1016/j.vgie.2020.05.024
+        </li>
+        <li>
+          Polkowski, M. (2005). Endoscopic ultrasound and endoscopic ultrasound-guided fine-needle biopsy for the
+          diagnosis of malignant submucosal tumors. Endoscopy, 37(7), 635–645. https://doi.org/10.1055/s-2005-861422
+        </li>
+        <li>
+          Precedence Research. (2024, June 13). Endoscopy Devices Market Size to Worth USD 104.74 billion by 2033.
+          Yahoo! Finance. https://finance.yahoo.com/news/endoscopy-devices-market-size-worth-155000563.html
+        </li>
+        <li>
+          Su, Q., Peng, J., Chen, X., Xiao, Z., Liu, R., & Wang, F. (2021). Role of endoscopic ultrasonography for
+          differential diagnosis of upper gastrointestinal submucosal lesions. BMC Gastroenterology, 21(1).
+          https://doi.org/10.1186/s12876-021-01945-9
+        </li>
+        <li>
+          UM-DP12-25R Helical Miniature Probe. Olympus Ultrasonic Miniature Probes. (2024).
+          https://www.olympus-mea.com/medical/en/Products-and-Solutions/Products/Product/UM-DP12-25R.html
+        </li>
+        <li>
+          Ward, M. (2017, October 16). Devices@FDA Apollo Endosurgery. accessdata.fda.gov.
+          https://www.accessdata.fda.gov/cdrh_docs/pdf17/K171886.pdf
+        </li>
+        <li>
+          Wei, M. T., Ahn, J. Y., & Friedland, S. (2021). Over-the-scope clip in the treatment of gastrointestinal
+          leaks and perforations. Clinical Endoscopy, 54(6), 798–804. https://doi.org/10.5946/ce.2021.250
+        </li>
+        <li>
+          X-tackTM. www.bostonscientific.com. (2024).
+          https://www.bostonscientific.com/en-US/products/endoscopic-closure/x-tack.html
+        </li>
+        <li>
+          Yamamoto, H. (2005). Double-Balloon Endoscopy. Clinical Gastroenterology and Hepatology, 3(7).
+          https://doi.org/10.1016/s1542-3565(05)00253-3
+        </li>
+        <li>
+          Yu, C., Liao, G., Fan, C., Yu, J., Nie, X., Yang, S., & Bai, J. (2017). Long-term outcomes of endoscopic
+          resection of Gastric Gists. Surgical Endoscopy, 31(11), 4799–4804. https://doi.org/10.1007/s00464-017-5557-2
+        </li>
+      </ul>
+    </div>
 
-        <sl-divider></sl-divider>
+    <sl-divider></sl-divider>
 
-        <div id="appendix-b">
-          <h3>Appendix B. Ovesco FTRD Endoscopic Full Thickness Resection System Set Up</h3>
-          <!-- embed youtube video -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/j5IY1cIq6rQ?si=u9ahKOxoGuySLCwO"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-        <sl-divider></sl-divider>
-
-        <div id="appendix-c">
-          <h3>Appendix C. Hybrid Resection Techniques ESD and FTRD</h3>
-          <image-component tag="image" source="assets/appendix/appendix-c-1.png" subtitle=""></image-component>
-          <image-component tag="image" source="assets/appendix/appendix-c-2.png" subtitle=""></image-component>
-          <p>https://ovesco.com/wp-content/uploads/media/PDFs/Applicationfocus_HybridRese_ENG_Rev01.pdf</p>
-        </div>
-
-        <sl-divider></sl-divider>
-
-        <div id="appendix-d">
-          <h3>Appendix D. Clinical Evidence for FTRD® in the stomach and duodenum</h3>
-          <image-component tag="image" source="assets/appendix/appendix-d-1.png" subtitle=""></image-component>
-          <image-component tag="image" source="assets/appendix/appendix-d-2.png" subtitle=""></image-component>
-          <p>https://ovesco.com/wp-content/uploads/media/PDFs/OVE_FTRD_CF_ENG_Rev02.pdf</p>
-        </div>
+    <div>
+      <div id="appendix">
+        <h2>Appendix</h2>
       </div>
 
-      <!-- This is the code to display the scroll to top button for ergonomic -->
-      <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
-      <!-- but it might reduce the user experience. -->
-      <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
-        <sl-icon name="arrow-up" label="Settings"></sl-icon>
-      </sl-button>
+      <div id="appendix-a">
+        <!-- embed youtube video -->
+        <h3>Appendix A. Endoscopic Full Thickness Resection of Transverse Colon Carcinoma</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OG6uwWlItuU?si=IXsA_0H5ubHrTujB"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
 
-      <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
-      <script type="module" src="./components/table-component/table-component.js"></script>
+      <sl-divider></sl-divider>
+
+      <div id="appendix-b">
+        <h3>Appendix B. Ovesco FTRD Endoscopic Full Thickness Resection System Set Up</h3>
+        <!-- embed youtube video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/j5IY1cIq6rQ?si=u9ahKOxoGuySLCwO"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <sl-divider></sl-divider>
+
+      <div id="appendix-c">
+        <h3>Appendix C. Hybrid Resection Techniques ESD and FTRD</h3>
+        <image-component tag="image" source="assets/appendix/appendix-c-1.png" subtitle=""></image-component>
+        <image-component tag="image" source="assets/appendix/appendix-c-2.png" subtitle=""></image-component>
+        <p>https://ovesco.com/wp-content/uploads/media/PDFs/Applicationfocus_HybridRese_ENG_Rev01.pdf</p>
+      </div>
+
+      <sl-divider></sl-divider>
+
+      <div id="appendix-d">
+        <h3>Appendix D. Clinical Evidence for FTRD® in the stomach and duodenum</h3>
+        <image-component tag="image" source="assets/appendix/appendix-d-1.png" subtitle=""></image-component>
+        <image-component tag="image" source="assets/appendix/appendix-d-2.png" subtitle=""></image-component>
+        <p>https://ovesco.com/wp-content/uploads/media/PDFs/OVE_FTRD_CF_ENG_Rev02.pdf</p>
+      </div>
+    </div>
+
+    <!-- This is the code to display the scroll to top button for ergonomic -->
+    <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
+    <!-- but it might reduce the user experience. -->
+    <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
+      <sl-icon name="arrow-up" label="Settings"></sl-icon>
+    </sl-button>
+
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script type="module" src="./components/table-component/table-component.js"></script>
 </body>
 
 </html>
